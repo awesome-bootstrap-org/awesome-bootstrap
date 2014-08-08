@@ -15,6 +15,7 @@ A curated list of free Bootstrap themes I think are cool. Inspired by awesome.
 
 ### Admin Dashboards
 - [lightway](http://www.prepbootstrap.com/bootstrap-theme/lightway-admin)
+- [Responsive Dashboard](https://github.com/Ehesp/Responsive-Dashboard)
 
 ### Retro Themes
 - [BOOTSTRA.386](https://kristopolous.github.io/BOOTSTRA.386/)
