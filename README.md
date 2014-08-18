@@ -58,7 +58,7 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 ### Contribution Guidelines
 **CONTRIBUTIONS NEEDED!**
 
-**My biggest need right now is screenshots of each to showcase here in the readme. Anyone willing to take on that task?**
+**My biggest need right now is screenshots of each to showcase here in the readme, and maybe a better way of organizing them. Anyone willing to take on one of those tasks?**
 
 If adding a new source, please ensure your pull request adheres to the following guidelines:
 
