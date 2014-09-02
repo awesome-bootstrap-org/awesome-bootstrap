@@ -10,7 +10,6 @@ A curated list of free Bootstrap themes I think are cool. Inspired by awesome.
 - [elegance](http://shapebootstrap.net/item/elegance-responsive-one-page-html-template/)
 - [Essentia](http://bootstrapmaster.com/themes/free-bootstrap-themes/essentia-free-bootstrap-template/)
 - [Flat Theme Responsive](http://shapebootstrap.net/item/flat-theme-free-responsive-multipurpose-site-template/)
-- [Flat UI](http://designmodo.github.io/Flat-UI/)
 - [flat theme](http://shapebootstrap.net/item/flat-theme-free-responsive-multipurpose-site-template/)
 - [Flatty](http://www.blacktie.co/2013/12/flatty-app-landing-page/)
 - [freelancer](http://startbootstrap.com/template-overviews/freelancer/)
@@ -44,6 +43,8 @@ A curated list of free Bootstrap themes I think are cool. Inspired by awesome.
 - [BOOTSTRA.386](https://kristopolous.github.io/BOOTSTRA.386/)
 
 ### UI Kits
+*These aren't full out-of-the-box themes, rather, they are components you can use in your own creations.*
+- [Flat UI](http://designmodo.github.io/Flat-UI/)
 - [todc-bootstrap (Google-styled theme)](https://github.com/todc/todc-bootstrap)
 
 ### External Lists
