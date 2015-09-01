@@ -73,7 +73,7 @@ A curated list of free Bootstrap themes I think are cool. Inspired by awesome.
 
 [![Creative Commons License](http://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
 
-This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[cc-by-4](https://tldrlegal.com/license/creative-commons-attribution-4.0-international-(cc-by-4)).
 
 
 ## Contributions
