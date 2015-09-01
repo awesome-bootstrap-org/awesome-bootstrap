@@ -11,7 +11,7 @@ A curated list of free Bootstrap themes I think are cool. Inspired by awesome.
   - [Admin Dashboards](#admin-dashboards)
   - [Retro Themes](#retro-themes)
   - [UI Kits](#ui-kits)
-- [External Links](#external-links)
+- [External Lists](#external-lists)
 - [License](#license)
 - [Contributions](#contributions)
 
