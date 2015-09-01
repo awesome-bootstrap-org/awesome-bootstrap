@@ -4,7 +4,7 @@ A curated list of free Bootstrap themes I think are cool. Inspired by awesome.
 
 *Note: while this repo is mainly Bootstrap specific themes, if there is a free theme that looks nice, it'll definitely be considered for inclusion.*
 
-### Single Page
+### Single Page Templates
 | Name | Link | Screenshot |
 | ---- | ---- | ---------- |
 | agency | http://startbootstrap.com/template-overviews/agency/ | ![agency](./screenshots/spa-agency.png) |
