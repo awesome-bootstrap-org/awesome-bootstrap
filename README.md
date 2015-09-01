@@ -4,6 +4,19 @@ A curated list of free Bootstrap themes I think are cool. Inspired by awesome.
 
 *Note: while this repo is mainly Bootstrap specific themes, if there is a free theme that looks nice, it'll definitely be considered for inclusion.*
 
+### Table of Contents
+
+- [Templates](#templates)
+  - [Single Page Templates](#single-page-templates)
+  - [Admin Dashboards](#admin-dashboards)
+  - [Retro Themes](#retro-themes)
+  - [UI Kits](#ui-kits)
+- [External Links](#external-links)
+- [License](#license)
+- [Contributions](#contributions)
+
+## Templates
+
 ### Single Page Templates
 | Name | Link | Screenshot |
 | ---- | ---- | ---------- |
@@ -63,7 +76,7 @@ A curated list of free Bootstrap themes I think are cool. Inspired by awesome.
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
 
-### Contribution Guidelines
+## Contributions
 **CONTRIBUTIONS NEEDED!**
 
 If adding a new source, please ensure your pull request adheres to the following guidelines:
