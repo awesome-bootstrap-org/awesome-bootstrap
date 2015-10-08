@@ -92,3 +92,7 @@ If adding a new source, please ensure your pull request adheres to the following
 * New categories, or improvements to the existing categorisation are welcome.
 
 Thank you for your suggestions!
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/therebelrobot/awesome-bootstrap/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
