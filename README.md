@@ -68,6 +68,7 @@ A curated list of free Bootstrap themes I think are cool. Inspired by awesome.
 - [35-best-free-bootstrap-themes](http://www.downloadnewthemes.com/2014/08/35-best-free-bootstrap-themes.html)
 - [40 Free Bootstrap Themes to Jump Start Your Web Design Project](http://savedelete.com/2014/08/15/free-bootstrap-themes/174529)
 - [Free Bootstrap Themes](http://www.bootstrappage.com/free_bootstrap_templates.php)
+- [75+ Free Bootstrap HTML5 Website Templates](http://webdesignwheel.com/free-bootstrap-html5-website-templates.html)
 
 ## License
 
