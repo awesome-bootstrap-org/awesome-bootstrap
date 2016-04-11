@@ -50,6 +50,8 @@ A curated list of free Bootstrap themes I think are cool. Inspired by awesome.
 ### Admin Dashboards
 | Name | Link | Screenshot |
 | ---- | ---- | ---------- |
+| Blur Admin | https://github.com/akveo/blur-admin | ![responsive](./screenshots/admin-blur.png) |
+| Gentelella | https://github.com/puikinsh/gentelella | ![responsive](./screenshots/admin-gentelella.png) |
 | lightway | http://www.prepbootstrap.com/bootstrap-theme/lightway-admin | ![lightway](./screenshots/admin-lightway.png) |
 | Responsive Dashboard | https://github.com/Ehesp/Responsive-Dashboard | ![responsive](./screenshots/admin-responsive.png) |
 
