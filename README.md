@@ -52,6 +52,7 @@ A curated list of free Bootstrap themes I think are cool. Inspired by awesome.
 | [Gentelella](https://github.com/puikinsh/gentelella) | ![responsive](./screenshots/admin-gentelella.png) |
 | [lightway](http://www.prepbootstrap.com/bootstrap-theme/lightway-admin) | ![lightway](./screenshots/admin-lightway.png) |
 | [Responsive Dashboard](https://github.com/Ehesp/Responsive-Dashboard) | ![responsive](./screenshots/admin-responsive.png) |
+| [ng2-admin](https://github.com/akveo/ng2-admin) |![ng3-admin](https://i.imgur.com/YgawGED.png) |
 
 ### Retro Themes
 | Name | Screenshot |
