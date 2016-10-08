@@ -9,6 +9,7 @@ A curated list of free Bootstrap themes I think are cool. Inspired by awesome.
   - [Admin Dashboards](#admin-dashboards)
   - [Retro Themes](#retro-themes)
   - [UI Kits](#ui-kits)
+- [Libraries](#libraries)
 - [External Lists](#external-lists)
 - [License](#license)
 - [Contributions](#contributions)
@@ -63,6 +64,10 @@ A curated list of free Bootstrap themes I think are cool. Inspired by awesome.
 *These aren't full out-of-the-box themes, rather, they are components you can use in your own creations.*
 - [Flat UI](http://designmodo.github.io/Flat-UI/)
 - [todc-bootstrap (Google-styled theme)](https://github.com/todc/todc-bootstrap)
+
+### Libraries
+
+- [Bootstrap-Vue](https://github.com/pi0/bootstrap-vue) Complete **Bootstrap 4** Components For Vue.js 2. <sup>2.x compatible</sup>
 
 ### External Lists
 *I'll list any source lists here to help generate some traffic to them too.*
