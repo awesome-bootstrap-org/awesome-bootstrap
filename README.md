@@ -2,17 +2,31 @@
 
 A curated list of free Bootstrap themes I think are cool. Inspired by awesome.
 
-### Table of Contents
+## Table of Contents
 
+- [Contributions](#contributions)
+- [Libraries](#libraries)
+- [UI Kits](#ui-kits)
 - [Templates](#templates)
   - [Single Page Templates](#single-page-templates)
   - [Admin Dashboards](#admin-dashboards)
-  - [Retro Themes](#retro-themes)
-  - [UI Kits](#ui-kits)
-- [Libraries](#libraries)
+  - [Retro Themes](#retro-themes)  
 - [External Lists](#external-lists)
 - [License](#license)
-- [Contributions](#contributions)
+
+## Contributions
+
+To contibute please see the [contributing.md](contributing.md) document.
+
+## Libraries
+
+- [Bootstrap-Vue](https://github.com/pi0/bootstrap-vue) Complete **Bootstrap 4** Components For Vue.js 2. <sup>2.x compatible</sup>
+
+## UI Kits
+*These aren't full out-of-the-box themes, rather, they are components you can use in your own creations.*
+- [CodexUI](https://codexui.com/)
+- [Flat UI](http://designmodo.github.io/Flat-UI/)
+- [todc-bootstrap (Google-styled theme)](https://github.com/todc/todc-bootstrap)
 
 ## Templates
 
@@ -60,15 +74,7 @@ A curated list of free Bootstrap themes I think are cool. Inspired by awesome.
 | ---- | ---------- |
 | [BOOTSTRA.386](https://kristopolous.github.io/BOOTSTRA.386/) | ![word](./screenshots/retro-bootstra.386.png) |
 
-### UI Kits
-*These aren't full out-of-the-box themes, rather, they are components you can use in your own creations.*
-- [Flat UI](http://designmodo.github.io/Flat-UI/)
-- [todc-bootstrap (Google-styled theme)](https://github.com/todc/todc-bootstrap)
-- [CodexUI](https://codexui.com/)
 
-### Libraries
-
-- [Bootstrap-Vue](https://github.com/pi0/bootstrap-vue) Complete **Bootstrap 4** Components For Vue.js 2. <sup>2.x compatible</sup>
 
 ### External Lists
 *I'll list any source lists here to help generate some traffic to them too.*
