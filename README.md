@@ -23,6 +23,8 @@ To contibute please see the [contributing.md](contributing.md) document.
 ## Libraries
 
 - :four: [Bootstrap-Vue](https://github.com/pi0/bootstrap-vue) Complete Components For Vue.js 2. <sup>2.x compatible</sup>
+- :four: [ng-bootstrap](https://github.com/ng-bootstrap/ng-bootstrap) Angular directives specific to Bootstrap 4 (Angular 2)
+- :three: [angular-ui/bootstrap](https://github.com/angular-ui/bootstrap) Native AngularJS (version 1) directives for Bootstrap.
 
 ## UI Kits
 *These aren't full out-of-the-box themes, rather, they are components you can use in your own creations.*
