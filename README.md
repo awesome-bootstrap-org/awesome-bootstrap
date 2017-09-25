@@ -63,6 +63,7 @@ A curated list of free Bootstrap themes I think are cool. Inspired by awesome.
 *These aren't full out-of-the-box themes, rather, they are components you can use in your own creations.*
 - [Flat UI](http://designmodo.github.io/Flat-UI/)
 - [todc-bootstrap (Google-styled theme)](https://github.com/todc/todc-bootstrap)
+- [CodexUI](https://codexui.com/)
 
 ### External Lists
 *I'll list any source lists here to help generate some traffic to them too.*
