@@ -29,8 +29,8 @@ To contibute please see the [contributing.md](contributing.md) document.
 
 ## UI Kits
 *These aren't full out-of-the-box themes, rather, they are components you can use in your own creations.*
-- :four: [CodexUI](https://codexui.com/)
-- :three: [Flat UI](http://designmodo.github.io/Flat-UI/)
+- :four: [CodexUI](https://codexui.com/) [[1]](#full-disclosure)
+- :three: [Flat UI](http://designmodo.github.io/Flat-UI/) 
 - :three: [todc-bootstrap (Google-styled theme)](https://github.com/todc/todc-bootstrap)
 
 ## Templates
@@ -96,8 +96,15 @@ To contibute please see the [contributing.md](contributing.md) document.
 
 ## Maintainers
 
-List started by [therebelrobot](https://github.com/therebelrobot).
+List started with :heart: by [therebelrobot](https://github.com/therebelrobot). 
 
-List maintained with :heart: by [shadowcodex](https://github.com/shadowcodex) [![Twitter Follow](https://img.shields.io/twitter/follow/iammrduncan.svg?style=social&label=Follow)](https://twitter.com/iammrduncan) 
+[![Twitter Follow](https://img.shields.io/twitter/follow/therebelrobot.svg?style=social&label=therebelrobot)](https://twitter.com/therebelrobot) 
+
+List maintained with :heart: by [shadowcodex](https://github.com/shadowcodex).  
+
+[![Twitter Follow](https://img.shields.io/twitter/follow/iammrduncan.svg?style=social&label=iammrduncan)](https://twitter.com/iammrduncan) 
 
 Contact shadowcodex or file an issue to contact maintainers.
+
+#### Full-Disclosure
+With a low community adoption rate of < 10 stars, it should be pointed out that shadowcodex is the sole contributor of CodexUI and it's being added because of contributor overlap. 
