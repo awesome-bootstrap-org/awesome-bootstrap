@@ -15,6 +15,7 @@ Bootstrap version is denoted by :three: or :four: emoji.
   - [Retro Themes](#retro-themes)  
 - [External Lists](#external-lists)
 - [License](#license)
+- [Maintainers](#license)
 
 ## Contributions
 
@@ -91,5 +92,12 @@ To contibute please see the [contributing.md](contributing.md) document.
 
 [![Creative Commons License](http://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
 
-[cc-by-4](https://tldrlegal.com/license/creative-commons-attribution-4.0-international-(cc-by-4)).
+[cc-by-4  - Too Long Didn't Read Version](https://tldrlegal.com/license/creative-commons-attribution-4.0-international-(cc-by-4)).
 
+## Maintainers
+
+List started by [therebelrobot](https://github.com/therebelrobot).
+
+List maintained by [shadowcodex](https://github.com/shadowcodex)
+
+Contact shadowcodex or file an issue to contact maintainers.
