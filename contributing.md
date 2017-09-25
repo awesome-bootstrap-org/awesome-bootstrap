@@ -1,5 +1,7 @@
 # Contributions
 
+By contributing to this repo you agree to abide by the [Contributor Code of Conduct](code-of-conduct.md)
+
 # The pull request should have a useful title. Pull requests with `Update readme.md` as title will be closed right away because I'm so tired of nobody reading this document. Please carefully read everything in `Adding to this list.`
 
 
