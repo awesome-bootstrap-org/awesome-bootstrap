@@ -23,15 +23,15 @@ To contibute please see the [contributing.md](contributing.md) document.
 
 ## Libraries
 
-- :four: [Bootstrap-Vue](https://github.com/pi0/bootstrap-vue) Complete Components For Vue.js 2. <sup>2.x compatible</sup>
-- :four: [ng-bootstrap](https://github.com/ng-bootstrap/ng-bootstrap) Angular directives specific to Bootstrap 4 (Angular 2)
-- :three: [angular-ui/bootstrap](https://github.com/angular-ui/bootstrap) Native AngularJS (version 1) directives for Bootstrap.
+- :four: [Bootstrap-Vue](https://github.com/pi0/bootstrap-vue) Complete Components For Vue.js 2. <sup>2.x compatible</sup> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+- :four: [ng-bootstrap](https://github.com/ng-bootstrap/ng-bootstrap) Angular directives specific to Bootstrap 4 (Angular 2) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+- :three: [angular-ui/bootstrap](https://github.com/angular-ui/bootstrap) Native AngularJS (version 1) directives for Bootstrap. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## UI Kits
 *These aren't full out-of-the-box themes, rather, they are components you can use in your own creations.*
-- :four: [CodexUI](https://codexui.com/) [[1]](#full-disclosure)
-- :three: [Flat UI](http://designmodo.github.io/Flat-UI/) 
-- :three: [todc-bootstrap (Google-styled theme)](https://github.com/todc/todc-bootstrap)
+- :four: [CodexUI](https://codexui.com/) [[1]](#full-disclosure) - Vanilla Bootstrap components that require no extra CSS or Javascript to use. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+- :three: [Flat UI](http://designmodo.github.io/Flat-UI/) - Flat UI is based on Bootstrap, a comfortable, responsive, and functional framework that simplifies the development of websites.  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) & [![License: CC BY 3.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/3.0/)
+- :three: [todc-bootstrap](https://github.com/todc/todc-bootstrap) - Google-styled theme for Bootstrap. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Templates
 
