@@ -98,6 +98,6 @@ To contibute please see the [contributing.md](contributing.md) document.
 
 List started by [therebelrobot](https://github.com/therebelrobot).
 
-List maintained with :heart: by [shadowcodex](https://github.com/shadowcodex) [![Twitter Follow](https://img.shields.io/twitter/follow/iammrduncan.svg?style=social&label=Follow)]() 
+List maintained with :heart: by [shadowcodex](https://github.com/shadowcodex) [![Twitter Follow](https://img.shields.io/twitter/follow/iammrduncan.svg?style=social&label=Follow)](https://twitter.com/iammrduncan) 
 
 Contact shadowcodex or file an issue to contact maintainers.
