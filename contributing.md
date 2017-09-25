@@ -1,6 +1,9 @@
-## Contributions
-**CONTRIBUTIONS NEEDED!**
+# Contributions
 
+# The pull request should have a useful title. Pull requests with `Update readme.md` as title will be closed right away because I'm so tired of nobody reading this document. Please carefully read everything in `Adding to this list.`
+
+
+## Adding to this list
 If adding a new source, please ensure your pull request adheres to the following guidelines:
 
 * Please search previous suggestions before making a new one, as yours may be a duplicate.
@@ -14,3 +17,11 @@ If adding a new source, please ensure your pull request adheres to the following
 * New categories, or improvements to the existing categorisation are welcome.
 
 Thank you for your suggestions!
+
+## Adding Something To This List
+
+1. Access the awesome list's GitHub page. For example: https://github.com/therebelrobot/awesome-bootstrap
+2. Click on the readme.md file.
+3. Now click the edit icon.
+4. You can start editing the text of the file in the in-browser editor. Make sure you follow guidelines above. You can use [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/). 
+5. Say why you're proposing the changes, and then click on "Propose file change". 
