@@ -22,13 +22,13 @@ To contibute please see the [contributing.md](contributing.md) document.
 
 ## Libraries
 
-- [Bootstrap-Vue](https://github.com/pi0/bootstrap-vue) Complete **Bootstrap 4** Components For Vue.js 2. <sup>2.x compatible</sup>
+- :four: [Bootstrap-Vue](https://github.com/pi0/bootstrap-vue) Complete Components For Vue.js 2. <sup>2.x compatible</sup>
 
 ## UI Kits
 *These aren't full out-of-the-box themes, rather, they are components you can use in your own creations.*
-- [CodexUI](https://codexui.com/)
-- [Flat UI](http://designmodo.github.io/Flat-UI/)
-- [todc-bootstrap (Google-styled theme)](https://github.com/todc/todc-bootstrap)
+- :four: [CodexUI](https://codexui.com/)
+- :three: [Flat UI](http://designmodo.github.io/Flat-UI/)
+- :three: [todc-bootstrap (Google-styled theme)](https://github.com/todc/todc-bootstrap)
 
 ## Templates
 
