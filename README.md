@@ -34,6 +34,7 @@ To contibute please see the [contributing.md](contributing.md) document.
 - :three: [todc-bootstrap](https://github.com/todc/todc-bootstrap) - Google-styled theme for Bootstrap. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Templates
+**IMPORTANT:** For items marked with ![custom license](https://img.shields.io/badge/License-Custom-red.svg) please visit their site to learn more about their license.
 
 ### Single Page Templates
 | Version | Name | Screenshot | Description | LicenseInUse |
@@ -41,7 +42,7 @@ To contibute please see the [contributing.md](contributing.md) document.
 | :four: | [agency](http://startbootstrap.com/template-overviews/agency/) | ![agency](./screenshots/spa-agency.png) | Agency is a one page agency portfolio theme for Bootstrap created by Start Bootstrap. This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form. | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 | :three: | [Amoeba](http://www.bootstrapzero.com/bootstrap-template/amoeba) | ![amoeba](./screenshots/spa-amoeba.png) |Amoeba is a free Bootstrap template from BootstrapTaste. Amoeba is one page site template built from Bootstrap 3 with modern flat style also coming with lot of premium features.|![custom license](https://img.shields.io/badge/License-Custom-red.svg)|
 | :two: | [Brushed](http://www.alessioatzeni.com/blog/brushed-template/) | ![brushed](./screenshots/spa-brushed.png) |Brushed is Free One Page Responsive HTML Template based on Twitter Bootstrap Framework. It is optimized for Retina Displays ( iPhone, iPad, iPod Touch and MacBook Pro Retina).|![custom license](https://img.shields.io/badge/License-Custom-red.svg)|
-|| [Essentia](http://bootstrapmaster.com/themes/free-bootstrap-themes/essentia-free-bootstrap-template/) | ![essentia](./screenshots/spa-essentia.png) |||
+| :two: | [Essentia](http://bootstrapmaster.com/themes/free-bootstrap-themes/essentia-free-bootstrap-template/) | ![essentia](./screenshots/spa-essentia.png) |Essentia Responsive Bootstrap Theme is an ultra responsive,  Twitter Bootstrap Theme that everybody wants. It’s an incredible theme that helps you transform your website into your unique business tool.|![custom license](https://img.shields.io/badge/License-Custom-red.svg)|
 || [Flat Theme Responsive](http://shapebootstrap.net/item/flat-theme-free-responsive-multipurpose-site-template/) | ![flat-theme](./screenshots/spa-flat-theme.png) |||
 || [Flatty](http://www.blacktie.co/2013/12/flatty-app-landing-page/) | ![flatty](./screenshots/spa-flatty.png) |||
 || [freelancer](http://startbootstrap.com/template-overviews/freelancer/) | ![freelancer](./screenshots/spa-freelancer.png) |||
