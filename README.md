@@ -39,9 +39,8 @@ To contibute please see the [contributing.md](contributing.md) document.
 | Version | Name | Screenshot | Description | LicenseInUse |
 | ------- | ---- | ---------- | ----------- | ------------ |
 | :four: | [agency](http://startbootstrap.com/template-overviews/agency/) | ![agency](./screenshots/spa-agency.png) | Agency is a one page agency portfolio theme for Bootstrap created by Start Bootstrap. This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form. | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
-|| [Amoeba](http://www.bootstrapzero.com/bootstrap-template/amoeba) | ![amoeba](./screenshots/spa-amoeba.png) |||
-|| [Brushed](http://www.alessioatzeni.com/blog/brushed-template/) | ![brushed](./screenshots/spa-brushed.png) |||
-|| [elegance](http://shapebootstrap.net/item/elegance-responsive-one-page-html-template/) | ![elegance](./screenshots/spa-elegance.png) |||
+| :three: | [Amoeba](http://www.bootstrapzero.com/bootstrap-template/amoeba) | ![amoeba](./screenshots/spa-amoeba.png) |Amoeba is a free Bootstrap template from BootstrapTaste. Amoeba is one page site template built from Bootstrap 3 with modern flat style also coming with lot of premium features.|![custom license](https://img.shields.io/badge/License-Custom-red.svg)|
+| :two: | [Brushed](http://www.alessioatzeni.com/blog/brushed-template/) | ![brushed](./screenshots/spa-brushed.png) |Brushed is Free One Page Responsive HTML Template based on Twitter Bootstrap Framework. It is optimized for Retina Displays ( iPhone, iPad, iPod Touch and MacBook Pro Retina).|![custom license](https://img.shields.io/badge/License-Custom-red.svg)|
 || [Essentia](http://bootstrapmaster.com/themes/free-bootstrap-themes/essentia-free-bootstrap-template/) | ![essentia](./screenshots/spa-essentia.png) |||
 || [Flat Theme Responsive](http://shapebootstrap.net/item/flat-theme-free-responsive-multipurpose-site-template/) | ![flat-theme](./screenshots/spa-flat-theme.png) |||
 || [Flatty](http://www.blacktie.co/2013/12/flatty-app-landing-page/) | ![flatty](./screenshots/spa-flatty.png) |||
