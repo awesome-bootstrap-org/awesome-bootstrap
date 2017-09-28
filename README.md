@@ -1,4 +1,5 @@
-<span style="display:block;text-align:center">![bootstrap stack](./screenshots/bootstrap-stack.png)</span>
+<p align="center"><img src="./screenshots/bootstrap-stack.png" alt="bootstrap-stack" /></p>
+
 
 # Awesome Bootstrap [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
