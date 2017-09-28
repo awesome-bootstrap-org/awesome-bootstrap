@@ -36,8 +36,8 @@ To contibute please see the [contributing.md](contributing.md) document.
 ## Templates
 
 ### Single Page Templates
-| Version | Name | Screenshot | Description | License |
-| ------- | ---- | ---------- | ----------- | ------- |
+| Version | Name | Screenshot | Description | LicenseInUse |
+| ------- | ---- | ---------- | ----------- | ------------ |
 | :four: | [agency](http://startbootstrap.com/template-overviews/agency/) | ![agency](./screenshots/spa-agency.png) | Agency is a one page agency portfolio theme for Bootstrap created by Start Bootstrap. This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form. | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
 || [Amoeba](http://www.bootstrapzero.com/bootstrap-template/amoeba) | ![amoeba](./screenshots/spa-amoeba.png) |||
 || [Brushed](http://www.alessioatzeni.com/blog/brushed-template/) | ![brushed](./screenshots/spa-brushed.png) |||
@@ -66,8 +66,8 @@ To contibute please see the [contributing.md](contributing.md) document.
 || [Xeon](http://shapebootstrap.net/item/xeon-best-onepage-site-template/) | ![xeon](./screenshots/spa-xeon.png) |||
 
 ### Admin Dashboards
-| Version | Name | Screenshot | Description | License |
-| ------- | ---- | ---------- | ----------- | ------- |
+| Version | Name | Screenshot | Description | LicenseInUse |
+| ------- | ---- | ---------- | ----------- | ------------ |
 || [Blur Admin](https://github.com/akveo/blur-admin) | ![responsive](./screenshots/admin-blur.png) |||
 || [Gentelella](https://github.com/puikinsh/gentelella) | ![responsive](./screenshots/admin-gentelella.png) |||
 || [lightway](http://www.prepbootstrap.com/bootstrap-theme/lightway-admin) | ![lightway](./screenshots/admin-lightway.png) |||
@@ -75,8 +75,8 @@ To contibute please see the [contributing.md](contributing.md) document.
 || [ng2-admin](https://github.com/akveo/ng2-admin) |![ng3-admin](https://i.imgur.com/YgawGED.png) |||
 
 ### Retro Themes
-| Version | Name | Screenshot | Description | License |
-| ------- | ---- | ---------- | ----------- | ------- |
+| Version | Name | Screenshot | Description | LicenseInUse |
+| ------- | ---- | ---------- | ----------- | ------------ |
 |:two: :three:| [BOOTSTRA.386](https://kristopolous.github.io/BOOTSTRA.386/) | ![word](./screenshots/retro-bootstra.386.png) |A vintage 1980s DOS inspired Twitter Bootstrap theme|[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)|
 
 
