@@ -28,3 +28,7 @@ Thank you for your suggestions!
 3. Now click the edit icon.
 4. You can start editing the text of the file in the in-browser editor. Make sure you follow guidelines above. You can use [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/). 
 5. Say why you're proposing the changes, and then click on "Propose file change". 
+
+## New to Contributing?
+
+**Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)

@@ -22,8 +22,9 @@ Bootstrap version is denoted by :three: or :four: emoji.
 - [Maintainers](#license)
 
 ## Contributions
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-To contibute please see the [contributing.md](contributing.md) document.
+To contibute please see the [contributing.md](contributing.md) document. 
 
 ## Components
 
