@@ -7,6 +7,7 @@ Bootstrap version is denoted by :three: or :four: emoji.
 ## Table of Contents
 
 - [Contributions](#contributions)
+- [Components](#components)
 - [Libraries](#libraries)
 - [UI Kits](#ui-kits)
 - [Templates](#templates)
@@ -20,6 +21,10 @@ Bootstrap version is denoted by :three: or :four: emoji.
 ## Contributions
 
 To contibute please see the [contributing.md](contributing.md) document.
+
+## Components
+
+- :three: [bootstrap-datepicker](https://github.com/uxsolutions/bootstrap-datepicker) - A datepicker for twitter bootstrap [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Libraries
 
