@@ -69,7 +69,7 @@ To contibute please see the [contributing.md](contributing.md) document.
 ### Admin Dashboards
 | Version | Name | Screenshot | Description | LicenseInUse |
 | ------- | ---- | ---------- | ----------- | ------------ |
-|| [Blur Admin](https://github.com/akveo/blur-admin) | ![responsive](./screenshots/admin-blur.png) |||
+|:three:| [Blur Admin](https://github.com/akveo/blur-admin) | ![responsive](./screenshots/admin-blur.png) |Customizable admin panel framework made with :heart: by Akveo team. Follow us on Twitter to get latest news about this template first!|[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
 || [Gentelella](https://github.com/puikinsh/gentelella) | ![responsive](./screenshots/admin-gentelella.png) |||
 || [lightway](http://www.prepbootstrap.com/bootstrap-theme/lightway-admin) | ![lightway](./screenshots/admin-lightway.png) |||
 || [Responsive Dashboard](https://github.com/Ehesp/Responsive-Dashboard) | ![responsive](./screenshots/admin-responsive.png) |||
