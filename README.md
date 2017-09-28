@@ -36,48 +36,48 @@ To contibute please see the [contributing.md](contributing.md) document.
 ## Templates
 
 ### Single Page Templates
-| Name | Screenshot |
-| ---- | ---------- |
-| [agency](http://startbootstrap.com/template-overviews/agency/) | ![agency](./screenshots/spa-agency.png) |
-| [Amoeba](http://www.bootstrapzero.com/bootstrap-template/amoeba) | ![amoeba](./screenshots/spa-amoeba.png) |
-| [Brushed](http://www.alessioatzeni.com/blog/brushed-template/) | ![brushed](./screenshots/spa-brushed.png) |
-| [elegance](http://shapebootstrap.net/item/elegance-responsive-one-page-html-template/) | ![elegance](./screenshots/spa-elegance.png) |
-| [Essentia](http://bootstrapmaster.com/themes/free-bootstrap-themes/essentia-free-bootstrap-template/) | ![essentia](./screenshots/spa-essentia.png) |
-| [Flat Theme Responsive](http://shapebootstrap.net/item/flat-theme-free-responsive-multipurpose-site-template/) | ![flat-theme](./screenshots/spa-flat-theme.png) |
-| [Flatty](http://www.blacktie.co/2013/12/flatty-app-landing-page/) | ![flatty](./screenshots/spa-flatty.png) |
-| [freelancer](http://startbootstrap.com/template-overviews/freelancer/) | ![freelancer](./screenshots/spa-freelancer.png) |
-| [Gotya](http://bootstrapmaster.com/themes/free-bootstrap-themes/gotya-free-bootstrap-theme/) | ![gotya](./screenshots/spa-gotya.png) |
-| [Grayscale](http://startbootstrap.com/template-overviews/grayscale/) | ![grayscale](./screenshots/spa-grayscale.png) |
-| [Landing Page](http://startbootstrap.com/landing-page) | ![landing-page](./screenshots/spa-landing-page.png) |
-| [Legend](http://www.dzyngiri.com/legend-free-responsive-one-page-template/) | ![legend](./screenshots/spa-legend.png) |
-| [Link Agency](http://www.blacktie.co/2013/11/link-bootstrap-3-agency-theme/) | ![link](./screenshots/spa-link.png) |
-| [Minimal Dark](http://www.bootstrapzero.com/bootstrap-template/minimal-dark) | ![minimal-dark](./screenshots/spa-minimal-dark.png) |
-| [Munter](http://www.bootstrapzero.com/bootstrap-template/munter) | ![munter](./screenshots/spa-munter.png) |
-| [Nova](http://shapebootstrap.net/item/nova-multipurpose-site-template/) | ![nova](./screenshots/spa-nova.png) |
-| [Passion](http://ortheme.com/passion-free-bootstrap-theme/) | ![passion](./screenshots/spa-passion.png) |
-| [Produkta](http://azmind.com/2013/04/06/free-template-produkta-responsive-bootstrap-product-showcase/) | ![produkta](./screenshots/spa-produkta.png) |
-| [Responsive Photography](http://blog.templatemonster.com/2012/11/19/free-bootstrap-responsive-template-photography/) | ![responsive-photography](./screenshots/spa-responsive-photography.png) |
-| [Shield](http://www.blacktie.co/2014/02/shield-one-page-theme/) | ![shield](./screenshots/spa-shield.png) |
-| [Slidefolio](http://bootstrap3themes.quora.com/Slidefolio-%E2%80%93-One-Page-Free-Responsive-Bootstrap-3-Portfolio-Theme) | ![slidefolio](./screenshots/spa-slidefolio.png) |
-| [Spot](http://www.blacktie.co/2013/10/spot-freelance-agency-theme/) | ![spot](./screenshots/spa-spot.png) |
-| [Stanley Freelancer](http://www.blacktie.co/2014/01/stanley-freelancer-theme/) | ![stanley](./screenshots/spa-stanley.png) |
-| [Stylish portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/) | ![stylish](./screenshots/spa-stylish.png) |
-| [techro](http://webthemez.com/techro-free-responsive-bootstrap-web-template/) | ![techro](./screenshots/spa-techro.png) |
-| [Xeon](http://shapebootstrap.net/item/xeon-best-onepage-site-template/) | ![xeon](./screenshots/spa-xeon.png) |
+| Version | Name | Screenshot | Description | License |
+| ------- | ---- | ---------- | ----------- | ------- |
+| :four: | [agency](http://startbootstrap.com/template-overviews/agency/) | ![agency](./screenshots/spa-agency.png) | Agency is a one page agency portfolio theme for Bootstrap created by Start Bootstrap. This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form. | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) |
+|| [Amoeba](http://www.bootstrapzero.com/bootstrap-template/amoeba) | ![amoeba](./screenshots/spa-amoeba.png) |||
+|| [Brushed](http://www.alessioatzeni.com/blog/brushed-template/) | ![brushed](./screenshots/spa-brushed.png) |||
+|| [elegance](http://shapebootstrap.net/item/elegance-responsive-one-page-html-template/) | ![elegance](./screenshots/spa-elegance.png) |||
+|| [Essentia](http://bootstrapmaster.com/themes/free-bootstrap-themes/essentia-free-bootstrap-template/) | ![essentia](./screenshots/spa-essentia.png) |||
+|| [Flat Theme Responsive](http://shapebootstrap.net/item/flat-theme-free-responsive-multipurpose-site-template/) | ![flat-theme](./screenshots/spa-flat-theme.png) |||
+|| [Flatty](http://www.blacktie.co/2013/12/flatty-app-landing-page/) | ![flatty](./screenshots/spa-flatty.png) |||
+|| [freelancer](http://startbootstrap.com/template-overviews/freelancer/) | ![freelancer](./screenshots/spa-freelancer.png) |||
+|| [Gotya](http://bootstrapmaster.com/themes/free-bootstrap-themes/gotya-free-bootstrap-theme/) | ![gotya](./screenshots/spa-gotya.png) |||
+|| [Grayscale](http://startbootstrap.com/template-overviews/grayscale/) | ![grayscale](./screenshots/spa-grayscale.png) |||
+|| [Landing Page](http://startbootstrap.com/landing-page) | ![landing-page](./screenshots/spa-landing-page.png) |||
+|| [Legend](http://www.dzyngiri.com/legend-free-responsive-one-page-template/) | ![legend](./screenshots/spa-legend.png) |||
+|| [Link Agency](http://www.blacktie.co/2013/11/link-bootstrap-3-agency-theme/) | ![link](./screenshots/spa-link.png) |||
+|| [Minimal Dark](http://www.bootstrapzero.com/bootstrap-template/minimal-dark) | ![minimal-dark](./screenshots/spa-minimal-dark.png) |||
+|| [Munter](http://www.bootstrapzero.com/bootstrap-template/munter) | ![munter](./screenshots/spa-munter.png) |||
+|| [Nova](http://shapebootstrap.net/item/nova-multipurpose-site-template/) | ![nova](./screenshots/spa-nova.png) |||
+|| [Passion](http://ortheme.com/passion-free-bootstrap-theme/) | ![passion](./screenshots/spa-passion.png) |||
+|| [Produkta](http://azmind.com/2013/04/06/free-template-produkta-responsive-bootstrap-product-showcase/) | ![produkta](./screenshots/spa-produkta.png) |||
+|| [Responsive Photography](http://blog.templatemonster.com/2012/11/19/free-bootstrap-responsive-template-photography/) | ![responsive-photography](./screenshots/spa-responsive-photography.png) |||
+|| [Shield](http://www.blacktie.co/2014/02/shield-one-page-theme/) | ![shield](./screenshots/spa-shield.png) |||
+|| [Slidefolio](http://bootstrap3themes.quora.com/Slidefolio-%E2%80%93-One-Page-Free-Responsive-Bootstrap-3-Portfolio-Theme) | ![slidefolio](./screenshots/spa-slidefolio.png) |||
+|| [Spot](http://www.blacktie.co/2013/10/spot-freelance-agency-theme/) | ![spot](./screenshots/spa-spot.png) |||
+|| [Stanley Freelancer](http://www.blacktie.co/2014/01/stanley-freelancer-theme/) | ![stanley](./screenshots/spa-stanley.png) |||
+|| [Stylish portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/) | ![stylish](./screenshots/spa-stylish.png) |||
+|| [techro](http://webthemez.com/techro-free-responsive-bootstrap-web-template/) | ![techro](./screenshots/spa-techro.png) |||
+|| [Xeon](http://shapebootstrap.net/item/xeon-best-onepage-site-template/) | ![xeon](./screenshots/spa-xeon.png) |||
 
 ### Admin Dashboards
-| Name | Screenshot |
-| ---- | ---------- |
-| [Blur Admin](https://github.com/akveo/blur-admin) | ![responsive](./screenshots/admin-blur.png) |
-| [Gentelella](https://github.com/puikinsh/gentelella) | ![responsive](./screenshots/admin-gentelella.png) |
-| [lightway](http://www.prepbootstrap.com/bootstrap-theme/lightway-admin) | ![lightway](./screenshots/admin-lightway.png) |
-| [Responsive Dashboard](https://github.com/Ehesp/Responsive-Dashboard) | ![responsive](./screenshots/admin-responsive.png) |
-| [ng2-admin](https://github.com/akveo/ng2-admin) |![ng3-admin](https://i.imgur.com/YgawGED.png) |
+| Version | Name | Screenshot | Description | License |
+| ------- | ---- | ---------- | ----------- | ------- |
+|| [Blur Admin](https://github.com/akveo/blur-admin) | ![responsive](./screenshots/admin-blur.png) |||
+|| [Gentelella](https://github.com/puikinsh/gentelella) | ![responsive](./screenshots/admin-gentelella.png) |||
+|| [lightway](http://www.prepbootstrap.com/bootstrap-theme/lightway-admin) | ![lightway](./screenshots/admin-lightway.png) |||
+|| [Responsive Dashboard](https://github.com/Ehesp/Responsive-Dashboard) | ![responsive](./screenshots/admin-responsive.png) |||
+|| [ng2-admin](https://github.com/akveo/ng2-admin) |![ng3-admin](https://i.imgur.com/YgawGED.png) |||
 
 ### Retro Themes
-| Name | Screenshot |
-| ---- | ---------- |
-| [BOOTSTRA.386](https://kristopolous.github.io/BOOTSTRA.386/) | ![word](./screenshots/retro-bootstra.386.png) |
+| Version | Name | Screenshot | Description | License |
+| ------- | ---- | ---------- | ----------- | ------- |
+|:two: :three:| [BOOTSTRA.386](https://kristopolous.github.io/BOOTSTRA.386/) | ![word](./screenshots/retro-bootstra.386.png) |A vintage 1980s DOS inspired Twitter Bootstrap theme|[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)|
 
 
 
