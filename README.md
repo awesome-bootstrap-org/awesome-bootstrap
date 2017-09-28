@@ -73,7 +73,7 @@ To contibute please see the [contributing.md](contributing.md) document.
 |:three:| [Gentelella](https://github.com/puikinsh/gentelella) | ![responsive](./screenshots/admin-gentelella.png) |Gentelella Admin is a free to use Bootstrap admin template. This template uses the default Bootstrap 3 styles along with a variety of powerful jQuery plugins and tools to create a powerful framework for creating admin panels or back-end dashboards.|[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
 |:three:| [lightway](http://www.prepbootstrap.com/bootstrap-theme/lightway-admin) | ![lightway](./screenshots/admin-lightway.png) |This is an extended Bootstrap admin theme, which uses a light color collection.|[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
 |:three:| [Responsive Dashboard](https://github.com/Ehesp/Responsive-Dashboard) | ![responsive](./screenshots/admin-responsive.png) |AngularJS implementation of the RDash admin dashboard theme |[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
-|| [ng2-admin](https://github.com/akveo/ng2-admin) |![ng3-admin](https://i.imgur.com/YgawGED.png) |||
+|:four:| [ng2-admin](https://github.com/akveo/ng2-admin) |![ng3-admin](https://i.imgur.com/YgawGED.png) |Admin dashboard template based on Nebular framework (Angular 4+, Bootstrap 4) previously known as ng2-admin|[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
 
 ### Retro Themes
 | Version | Name | Screenshot | Description | LicenseInUse |
