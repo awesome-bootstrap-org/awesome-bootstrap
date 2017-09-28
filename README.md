@@ -60,8 +60,7 @@ To contibute please see the [contributing.md](contributing.md) document.
 | :three: | [Spot](http://www.blacktie.co/2013/10/spot-freelance-agency-theme/) | ![spot](./screenshots/spa-spot.png) |Spot is flat & handsome theme. Designed for freelancers or small agencies, Spot looks awesome in your browser or mobile device. It comes with cool stuff like charts, pricing tables, font awesome 4.0 and more.|![custom license](https://img.shields.io/badge/License-Custom-red.svg)|
 | :three: | [Stanley Freelancer](http://www.blacktie.co/2014/01/stanley-freelancer-theme/) | ![stanley](./screenshots/spa-stanley.png) |Stanley is a really simple theme for those wanting to showcase their work with a cute & clean style.|![custom license](https://img.shields.io/badge/License-Custom-red.svg)|
 | :four: | [Stylish portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/) | ![stylish](./screenshots/spa-stylish.png) |Stylish Portfolio is a one page Bootstrap portfolio theme with off canvas navigation and smooth scrolling through content sections.|[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
-|| [techro](http://webthemez.com/techro-free-responsive-bootstrap-web-template/) | ![techro](./screenshots/spa-techro.png) |||
-|| [Xeon](http://shapebootstrap.net/item/xeon-best-onepage-site-template/) | ![xeon](./screenshots/spa-xeon.png) |||
+| :three: | [techro](http://webthemez.com/techro-free-responsive-bootstrap-web-template/) | ![techro](./screenshots/spa-techro.png) |Techro is a business/corporate bootstrap responsive multi page website/ template build with Bootstrap3.1.1, HTML5 & CSS3 and jQuery. It’s a perfect template for corporate, business, web agencies, digital studios, product showcase and personal portfolio.|![custom license](https://img.shields.io/badge/License-Custom-red.svg)|
 
 ### Admin Dashboards
 | Version | Name | Screenshot | Description | LicenseInUse |
