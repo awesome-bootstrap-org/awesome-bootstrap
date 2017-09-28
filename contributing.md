@@ -17,6 +17,7 @@ If adding a new source, please ensure your pull request adheres to the following
 * Order projects alphabetically within each category.
 * Check your spelling and grammar.
 * New categories, or improvements to the existing categorisation are welcome.
+* You can see badge's for different licenses here [license badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
 
 Thank you for your suggestions!
 
