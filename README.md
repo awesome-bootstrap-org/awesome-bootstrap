@@ -26,6 +26,7 @@ To contibute please see the [contributing.md](contributing.md) document.
 - :four: [Bootstrap-Vue](https://github.com/pi0/bootstrap-vue) Complete Components For Vue.js 2. <sup>2.x compatible</sup> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 - :four: [ng-bootstrap](https://github.com/ng-bootstrap/ng-bootstrap) Angular directives specific to Bootstrap 4 (Angular 2) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 - :three: [angular-ui/bootstrap](https://github.com/angular-ui/bootstrap) Native AngularJS (version 1) directives for Bootstrap. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+- :three: [react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) - Bootstrap 3 components built with React. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## UI Kits
 *These aren't full out-of-the-box themes, rather, they are components you can use in your own creations.*
