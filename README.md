@@ -45,6 +45,10 @@ To contibute please see the [contributing.md](contributing.md) document.
 - :three: [Flat UI](http://designmodo.github.io/Flat-UI/) - Flat UI is based on Bootstrap, a comfortable, responsive, and functional framework that simplifies the development of websites.  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) & [![License: CC BY 3.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/3.0/)
 - :three: [todc-bootstrap](https://github.com/todc/todc-bootstrap) - Google-styled theme for Bootstrap. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 - :three: [bootswatch](https://bootswatch.com/) - Bootswatch is a collection of open source themes for Bootstrap. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+- :four: [UI1.io](https://ui1.io?ref=awesome_b) - Super easy way to **make your own** Bootstrap UI Kit.
+  
+  [![UI1 bootstrap generator demo](https://media.giphy.com/media/2ux1PkyQUONmC91Ya1/giphy.gif)](https://ui1.io?ref=awesome_b)
+
 
 ## Templates
 **IMPORTANT:** For items marked with ![custom license](https://img.shields.io/badge/License-Custom-red.svg) please visit their site to learn more about their license.
