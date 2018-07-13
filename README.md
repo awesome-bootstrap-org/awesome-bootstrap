@@ -30,6 +30,9 @@ To contibute please see the [contributing.md](contributing.md) document.
 
 - :three: [bootstrap-datepicker](https://github.com/uxsolutions/bootstrap-datepicker) - A datepicker for twitter bootstrap [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 - :two::three: [boostrap-table](https://github.com/wenzhixin/bootstrap-table) - An extended Bootstrap table with radio, checkbox, sort, pagination, and other added features. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+- :four: [dx-react-grid](https://devexpress.github.io/devextreme-reactive/react/grid/) - High-performance plugin-based React data grid for Bootstrap 3/4. ![custom license](https://img.shields.io/badge/License-Custom-red.svg)
+- :five: [dx-react-chart-bootstrap4](https://devexpress.github.io/devextreme-reactive/react/chart/) - High-performance plugin-based React chart for Bootstrap 4. ![custom license](https://img.shields.io/badge/License-Custom-red.svg)
+- :six: [dx-vue-grid-bootstrap4](https://devexpress.github.io/devextreme-reactive/vue/grid/) - High-performance plugin-based Vue data grid for Bootstrap 4. ![custom license](https://img.shields.io/badge/License-Custom-red.svg)
 
 ## Libraries
 
