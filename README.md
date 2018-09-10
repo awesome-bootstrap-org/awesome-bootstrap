@@ -93,6 +93,13 @@ To contibute please see the [contributing.md](contributing.md) document.
 |:two: :three:| [BOOTSTRA.386](https://kristopolous.github.io/BOOTSTRA.386/) | ![word](./screenshots/retro-bootstra.386.png) |A vintage 1980s DOS inspired Twitter Bootstrap theme|[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)|
 
 
+### Free Themes
+| Version | Name | Screenshot | Description | LicenseInUse |
+| ------- | ---- | ---------- | ----------- | ------------ |
+|:four:| [DevExpress OfficeWhite](https://github.com/DevExpress/bootstrap-themes/) | ![word](./screenshots/DevExpressOfficeWhiteBootstrapTheme_Buttons.png) |A Twitter Bootstrap theme inspired by 'Office365'|[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
+|:four:| [DevExpress Purple](https://github.com/DevExpress/bootstrap-themes/) | ![word](./screenshots/DevExpressPurpleBootstrapTheme_Buttons.png) |A Twitter Bootstrap theme with modern design|[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
+
+
 
 ### External Lists
 *I'll list any source lists here to help generate some traffic to them too.*
