@@ -45,6 +45,7 @@ To contibute please see the [contributing.md](contributing.md) document.
 - :three: [Flat UI](http://designmodo.github.io/Flat-UI/) - Flat UI is based on Bootstrap, a comfortable, responsive, and functional framework that simplifies the development of websites.  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) & [![License: CC BY 3.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/3.0/)
 - :three: [todc-bootstrap](https://github.com/todc/todc-bootstrap) - Google-styled theme for Bootstrap. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 - :three: [bootswatch](https://bootswatch.com/) - Bootswatch is a collection of open source themes for Bootstrap. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+- :three: [Anchor UI](https://wowthemesnet.github.io/Anchor-Bootstrap-UI-Kit/index.html) - Anchor is a free Bootstrap UI Kit with flexible, ready to use UI components which will hep you build websites faster. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Templates
 **IMPORTANT:** For items marked with ![custom license](https://img.shields.io/badge/License-Custom-red.svg) please visit their site to learn more about their license.
