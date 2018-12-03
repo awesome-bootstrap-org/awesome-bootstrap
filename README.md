@@ -7,7 +7,7 @@
 
 Bootstrap version is denoted by :three: or :four: emoji.
 
-## Table of Contents
+## Contents
 
 - [Contributions](#contributions)
 - [Components](#components)
