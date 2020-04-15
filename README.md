@@ -45,6 +45,7 @@ To contibute please see the [contributing.md](contributing.md) document.
 - :three: [Flat UI](http://designmodo.github.io/Flat-UI/) - Flat UI is based on Bootstrap, a comfortable, responsive, and functional framework that simplifies the development of websites.  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) & [![License: CC BY 3.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/3.0/)
 - :three: [todc-bootstrap](https://github.com/todc/todc-bootstrap) - Google-styled theme for Bootstrap. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 - :three: [bootswatch](https://bootswatch.com/) - Bootswatch is a collection of open source themes for Bootstrap. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+- :four: [Pixel UI Kit](https://github.com/themesberg/pixel-bootstrap-ui-kit) - Premium collection of Bootstrap components and 4 example pages. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Templates
 **IMPORTANT:** For items marked with ![custom license](https://img.shields.io/badge/License-Custom-red.svg) please visit their site to learn more about their license.
@@ -91,6 +92,9 @@ To contibute please see the [contributing.md](contributing.md) document.
 | Version | Name | Screenshot | Description | LicenseInUse |
 | ------- | ---- | ---------- | ----------- | ------------ |
 |:two: :three:| [BOOTSTRA.386](https://kristopolous.github.io/BOOTSTRA.386/) | ![word](./screenshots/retro-bootstra.386.png) |A vintage 1980s DOS inspired Twitter Bootstrap theme|[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)|
+| Version | Name | Screenshot | Description | LicenseInUse |
+| ------- | ---- | ---------- | ----------- | ------------ |
+|:four:| [Windows 95 Bootstrap](https://github.com/themesberg/windows-95-ui-kit) | ![Windows 95 Bootstrap UI Kit Screenshot](https://themesberg.s3.us-east-2.amazonaws.com/public/products/windows-95/windows-95-bootstrap-preview.gif) |Original Windows 95 Elements UI Kit|[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
 
 
 
@@ -100,6 +104,7 @@ To contibute please see the [contributing.md](contributing.md) document.
 - [40 Free Bootstrap Themes to Jump Start Your Web Design Project](http://savedelete.com/2014/08/15/free-bootstrap-themes/174529)
 - [Free Bootstrap Themes](http://www.bootstrappage.com/free_bootstrap_templates.php)
 - [75+ Free Bootstrap HTML5 Website Templates](http://webdesignwheel.com/free-bootstrap-html5-website-templates.html)
+- [Top 10 Free Bootstrap UI Kits](https://themesberg.com/blog/ui-kits/top-10-free-bootstrap-ui-kits-for-2020)
 
 ## License
 
