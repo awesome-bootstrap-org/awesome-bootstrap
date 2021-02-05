@@ -100,6 +100,7 @@ To contibute please see the [contributing.md](contributing.md) document.
 - [40 Free Bootstrap Themes to Jump Start Your Web Design Project](http://savedelete.com/2014/08/15/free-bootstrap-themes/174529)
 - [Free Bootstrap Themes](http://www.bootstrappage.com/free_bootstrap_templates.php)
 - [75+ Free Bootstrap HTML5 Website Templates](http://webdesignwheel.com/free-bootstrap-html5-website-templates.html)
+- [Bootstrap CheatSheet](https://bootstrap-cheatsheet.themeselection.com/)
 
 ## License
 
