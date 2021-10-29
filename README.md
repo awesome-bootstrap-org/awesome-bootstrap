@@ -223,11 +223,6 @@ List started with :heart: by [therebelrobot](https://github.com/therebelrobot).
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/therebelrobot.svg?style=social&label=therebelrobot)](https://twitter.com/therebelrobot) 
 
-List maintained with :heart: by [shadowcodex](https://github.com/shadowcodex).  
+List maintained with :heart: by [filipkappa](https://github.com/filipkappa).
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/iammrduncan.svg?style=social&label=iammrduncan)](https://twitter.com/iammrduncan) 
-
-Contact shadowcodex or file an issue to contact maintainers.
-
-#### Full-Disclosure
-With a low community adoption rate of < 10 stars, it should be pointed out that shadowcodex is the sole contributor of CodexUI and it's being added because of contributor overlap. 
+Contact filipkappa or file an issue to contact maintainers.
