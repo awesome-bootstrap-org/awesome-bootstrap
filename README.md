@@ -16,9 +16,9 @@ Bootstrap version is denoted by :three: :four: or :five: emoji.
 - [Templates](#templates)
   - [Single Page Templates](#single-page-templates)
   - [Admin Dashboards](#admin-dashboards)
-  - [Retro Themes](#retro-themes)  
   - [Popular website clones](#popular-website-clones)
-- [External Lists](#external-lists)
+  - [Other themes](#other-themes)  
+
 - [Playgrounds](#playgrounds)
 - [Design Tools](#design-tools)
 - [License](#license)
@@ -60,7 +60,7 @@ To contibute please see the [contributing.md](contributing.md) document.
 - :three: [Flat UI](http://designmodo.github.io/Flat-UI/) - Flat UI is based on Bootstrap, a comfortable, responsive, and functional framework that simplifies the development of websites.  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) & [![License: CC BY 3.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/3.0/)
 - :three: [todc-bootstrap](https://github.com/todc/todc-bootstrap) - Google-styled theme for Bootstrap. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 - :three: [bootswatch](https://bootswatch.com/) - Bootswatch is a collection of open source themes for Bootstrap. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
+- :four: [Pixel UI Kit](https://github.com/themesberg/pixel-bootstrap-ui-kit) - Premium collection of Bootstrap components and 4 example pages. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Templates
 **IMPORTANT:** For items marked with ![custom license](https://img.shields.io/badge/License-Custom-red.svg) please visit their site to learn more about their license.
@@ -120,13 +120,6 @@ To contibute please see the [contributing.md](contributing.md) document.
 |:three:| [sb-admin2](https://startbootstrap.com/template-overviews/sb-admin-2/) |![sb-admin](./screenshots/sb-admin2.png)|SB Admin 2 Bootstrap admin theme, dashboard template, or webapp UI starter. The theme features a variety of custom jQuery plugins to add extended functionality past the built in Bootstrap UI features.|[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
 |:four:| [Tabler](https://tabler.io/) |![tabler](./screenshots/tabler.png)|Premium and Open Source dashboard template with responsive and high quality UI built on Bootstrap 4.|[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
 
-
-### Retro Themes
-| Version | Name | Screenshot | Description | LicenseInUse |
-| ------- | ---- | ---------- | ----------- | ------------ |
-|:three: :two:| [BOOTSTRA.386](https://kristopolous.github.io/BOOTSTRA.386/) | ![word](./screenshots/retro-bootstra.386.png) |A vintage 1980s DOS inspired Twitter Bootstrap theme|[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)|
-
-
 ### Popular website clones
 | Version | Name | Screenshot | Description | LicenseInUse |
 | ------- | ---- | ---------- | ----------- | ------------ |
@@ -144,9 +137,13 @@ To contibute please see the [contributing.md](contributing.md) document.
 |:five:|[Facebook newsfeed](https://mdbootstrap.com/snippets/standard/mdb-lab/2847263) | ![Facebook newsfeed](./screenshots/facebook-newsfeed.jpg) |The project includes the user's newsfeed, along with the typical three-column layout and social media navigation.|[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
 |:five:|[Amazon homepage](https://mdbootstrap.com/snippets/standard/mdb-lab/2847262) | ![Amazon homepage](./screenshots/amazon-homepage.jpg) |The project includes a home page with typical, advanced eCommerce navigation (double navbar + sidenav) and multiple media containers for presenting products.|[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
 
-
-
-
+### Other Themes
+| Version | Name | Screenshot | Description | LicenseInUse |
+| ------- | ---- | ---------- | ----------- | ------------ |
+|:three: :two:| [BOOTSTRA.386](https://kristopolous.github.io/BOOTSTRA.386/) | ![word](./screenshots/retro-bootstra.386.png) |A vintage 1980s DOS inspired Twitter Bootstrap theme|[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)|
+|:four:| [DevExpress OfficeWhite](https://github.com/DevExpress/bootstrap-themes/) | ![word](./screenshots/DevExpressOfficeWhiteBootstrapTheme_Buttons.png) |A Twitter Bootstrap theme inspired by 'Office365'|[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
+|:four:| [DevExpress Purple](https://github.com/DevExpress/bootstrap-themes/) | ![word](./screenshots/DevExpressPurpleBootstrapTheme_Buttons.png) |A Twitter Bootstrap theme with modern design|[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
+|:four:| [Windows 95 Bootstrap](https://github.com/themesberg/windows-95-ui-kit) | ![Windows 95 Bootstrap UI Kit Screenshot](https://themesberg.s3.us-east-2.amazonaws.com/public/products/windows-95/windows-95-bootstrap-preview.gif) |Original Windows 95 Elements UI Kit|[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
 
 ### Playgrounds & hosting
 
