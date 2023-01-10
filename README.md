@@ -207,13 +207,6 @@ To contibute please see the [contributing.md](contributing.md) document.
 - [Ripple generator](https://mdbootstrap.com/docs/standard/tools/builders/ripple/)
 - [Button Generator](https://bootstrapbuttons.com)
 
-### External Lists
-*I'll list any source lists here to help generate some traffic to them too.*
-- [35-best-free-bootstrap-themes](http://www.downloadnewthemes.com/2014/08/35-best-free-bootstrap-themes.html)
-- [40 Free Bootstrap Themes to Jump Start Your Web Design Project](http://savedelete.com/2014/08/15/free-bootstrap-themes/174529)
-- [Free Bootstrap Themes](http://www.bootstrappage.com/free_bootstrap_templates.php)
-- [75+ Free Bootstrap HTML5 Website Templates](http://webdesignwheel.com/free-bootstrap-html5-website-templates.html)
-
 ## License
 
 [![Creative Commons License](http://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
