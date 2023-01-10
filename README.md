@@ -17,12 +17,14 @@
     - [Popular website clones](#popular-website-clones)
   - [Playgrounds](#playgrounds)
   - [Design Tools](#design-tools)
+
 - [Bootstrap 4 resources](#bootstrap-4-resources)
   - [UI Kits](#ui-kits--libraries-1)
   - [Templates](#templates-1)
     - [Single Page Templates](#single-page-templates-1)
     - [Admin Dashboards](#admin-dashboards-1)
     - [Other themes](#other-themes) 
+
 - [Info](#info)
   - [Contributions](#contributions)
   - [License](#license)
