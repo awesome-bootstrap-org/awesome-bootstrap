@@ -117,6 +117,7 @@ To contibute please see the [contributing.md](contributing.md) document.
 |:three:| [lightway](http://www.prepbootstrap.com/bootstrap-theme/lightway-admin) | ![lightway](./screenshots/admin-lightway.png) |This is an extended Bootstrap admin theme, which uses a light color collection.|[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
 |:three:| [Responsive Dashboard](https://github.com/Ehesp/Responsive-Dashboard) | ![responsive](./screenshots/admin-responsive.png) |AngularJS implementation of the RDash admin dashboard theme |[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
 |:three:| [sb-admin2](https://startbootstrap.com/template-overviews/sb-admin-2/) |![sb-admin](./screenshots/sb-admin2.png)|SB Admin 2 Bootstrap admin theme, dashboard template, or webapp UI starter. The theme features a variety of custom jQuery plugins to add extended functionality past the built in Bootstrap UI features.|[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
+|:four:| [Tabler](https://tabler.io/) |![tabler](./screenshots/tabler.png)|Premium and Open Source dashboard template with responsive and high quality UI built on Bootstrap 4.|[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)|
 
 
 ### Retro Themes
