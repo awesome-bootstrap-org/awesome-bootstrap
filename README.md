@@ -48,9 +48,12 @@ Resources compatible with the latest Bootstrap v5 (based on vanilla JavaScript).
 ## UI Kits & libraries
 *These aren't full out-of-the-box themes, rather, they are components you can use in your own creations.*
 - :five: [Material Design for Bootstrap](https://github.com/mdbootstrap/mdb-ui-kit) - 700+ free material UI components & templates. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-- - :five: [Material Design for React](https://mdbootstrap.com/docs/react/) - 700+ free material UI components & templates. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-- - :five: [Material Design for Angular](https://mdbootstrap.com/docs/angular/) - 700+ free material UI components & templates. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-- - :five: [Material Design for Vue](https://mdbootstrap.com/docs/vue/) - 700+ free material UI components & templates. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+- :five: [Material Design for React](https://mdbootstrap.com/docs/react/) - 700+ free material UI components & templates. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+- :five: [Material Design for Angular](https://mdbootstrap.com/docs/angular/) - 700+ free material UI components & templates. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+- :five: [Material Design for Vue](https://mdbootstrap.com/docs/vue/) - 700+ free material UI components & templates. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+- :five: [Bootstrap E-commerce](https://bootstrap-ecommerce.com/) - A powerful html library to develop e-commerce web sites with a huge set of components and templates. (free with code `awesome`)
+- :five: [Bootstrap E-commerce Admin](https://bootstrap-ecommerce.com/) - Ready to use simple e-commerce dashboard templates. Admin sales dashboard ui designs with demo includes all necessary files to start project quickly. (free with code `awesome`)
+- :five: [Bootstrap Menu](https://bootstrap-menu.com/) - A collection of templates for different Bootstrap 5 menu & submenu configurations. (free with code `awesome`)
 
 ## Templates
 **IMPORTANT:** For items marked with ![custom license](https://img.shields.io/badge/License-Custom-red.svg) please visit their site to learn more about their license.
