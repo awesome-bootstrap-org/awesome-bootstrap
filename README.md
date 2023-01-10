@@ -5,33 +5,34 @@
 
 :sparkles: Awesome - A curated list of amazing Bootstrap templates, plugins, UI Kits, tools and themes.
 
-Bootstrap version is denoted by :four: or :five: emoji.
-
-We do not recommend you use outdated frameworks, so Bootstrap 3 entries are no longer allowed.
-
-If you have multiple versions of your resource, please include the highest version only, or include each of them as a separate entry.
-
 ## Contents
 
-- [Contributions](#contributions)
-- [Components](#components)
-- [Libraries](#libraries)
-- [UI Kits](#ui-kits)
-- [Templates](#templates)
-  - [Single Page Templates](#single-page-templates)
-  - [Admin Dashboards](#admin-dashboards)
-  - [Popular website clones](#popular-website-clones)
-  - [Other themes](#other-themes)  
 
-- [Playgrounds](#playgrounds)
-- [Design Tools](#design-tools)
-- [License](#license)
-- [Maintainers](#license)
 
-## Contributions
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+- [Bootstrap 5 resources](#components)
+  - [Components](#components)
+  - [Libraries](#libraries)
+  - [UI Kits](#ui-kits)
+  - [Templates](#templates)
+    - [Single Page Templates](#single-page-templates)
+    - [Admin Dashboards](#admin-dashboards)
+    - [Popular website clones](#popular-website-clones)
+  - [Playgrounds](#playgrounds)
+  - [Design Tools](#design-tools)
+- [Bootstrap 4 resources](#bootstrap-4-resources)
+  - [UI Kits](#ui-kits-1)
+  - [Templates](#templates-1)
+    - [Single Page Templates](#single-page-templates-1)
+    - [Admin Dashboards](#admin-dashboards-1)
+    - [Other themes](#other-themes) 
+  - [Info](#info)
+  - [Contributions](#contributions)
+  - [License](#license)
+  - [Maintainers](#license)
 
-To contibute please see the [contributing.md](contributing.md) document. 
+
+---
+
 
 # Bootstrap 5 resources
 Resources compatible with the latest Bootstrap v5 (based on vanilla JavaScript).
@@ -220,8 +221,17 @@ Resources compatible with the older Bootstrap v4 (based on jQuery).
 
 
 
+---
 
+# Info
 
+## Contributions
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+To contibute please see the [contributing.md](contributing.md) document. 
+Bootstrap version is denoted by :four: or :five: emoji.
+We do not recommend you use outdated frameworks, so Bootstrap 3 entries are no longer allowed.
+If you have multiple versions of your resource, please include the highest version only, or include each of them as a separate entry.
 
 ## License
 
