@@ -36,7 +36,7 @@ To contibute please see the [contributing.md](contributing.md) document.
 -  :five: [Tables Generator & Templates](https://tables-generator.mdbgo.io/) - Use 10+ templates and present your data in a more accessible way or generate your own table
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 - :three: [bootstrap-datepicker](https://github.com/uxsolutions/bootstrap-datepicker) - A datepicker for twitter bootstrap [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-- :two::three: [boostrap-table](https://github.com/wenzhixin/bootstrap-table) - An extended Bootstrap table with radio, checkbox, sort, pagination, and other added features. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+- :two::three::four::five: [boostrap-table](https://github.com/wenzhixin/bootstrap-table) - An extended Bootstrap table with radio, checkbox, sort, pagination, and other added features. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Libraries
 - :five: [Bootstrap 5 & Angular 11](https://github.com/mdbootstrap/mdb-angular-ui-kit) - 500+ free material UI components & templates. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
