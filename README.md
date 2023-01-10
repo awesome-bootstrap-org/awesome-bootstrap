@@ -3,7 +3,7 @@
 
 # Awesome Bootstrap [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-:sparkles: Awesome - A curated list of amazing Bootstrap tools and themes.
+:sparkles: Awesome - A curated list of amazing Bootstrap templates, plugins, UI Kits, tools and themes.
 
 Bootstrap version is denoted by :three: :four: or :five: emoji.
 
