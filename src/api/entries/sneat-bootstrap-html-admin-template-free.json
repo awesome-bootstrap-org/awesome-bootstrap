@@ -1,0 +1,21 @@
+{
+  "title": "Sneat Bootstrap Admin Template",
+  "type": "ui kit",
+  "source": "npm",
+  "name": "sneat-bootstrap-html-admin-template-free",
+  "author": {
+    "name": "ThemeSelection",
+    "url": "https://themeselection.com/"
+  },
+  "supports": ["5"],
+  "keywords": [
+    "admin",
+    "framework",
+    "admin-dashboard",
+    "webapp",
+    "themeselection"
+  ],
+  "license": "MIT",
+  "description": "Most Powerful & Comprehensive Free Bootstrap 5 HTML Admin Dashboard Template built for developers! 🚀",
+  "homepage": "https://themeselection.com/products/sneat-free-bootstrap-html-admin-template/"
+}

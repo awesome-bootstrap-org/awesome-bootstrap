@@ -1,0 +1,12 @@
+{
+  "title": "Material Design for Bootstrap",
+  "type": "ui kit",
+  "source": "npm",
+  "name": "mdb-ui-kit",
+  "author": "MDBootstrap",
+  "supports": ["4", "5"],
+  "keywords": ["framework", "material", "material-design", "theme", "template"],
+  "license": "MIT",
+  "description": "MDB is a collection of free Bootstrap templates, themes, design tools & resources.",
+  "homepage": "https://mdbootstrap.com/docs/standard/"
+}
