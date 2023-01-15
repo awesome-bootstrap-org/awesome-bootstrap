@@ -1,4 +1,9 @@
-import { setImageRoot, blinkImage } from "./utilities.js";
+import {
+  setImageRoot,
+  blinkImage,
+  showdownConfig,
+  md2html,
+} from "./utilities.js";
 export class Page {
   /**
    * Create a new Page and init component
@@ -6,6 +11,7 @@ export class Page {
   constructor() {
     setImageRoot(this.root);
     $(".img-toggle").each((_index, container) => blinkImage(container));
+    showdownConfig();
   }
 
   /**
@@ -47,5 +53,21 @@ export class Page {
    */
   get root() {
     return undefined;
+  }
+
+  /**
+   * Convert and format Markdown to HTML
+   * @static
+   * @param {String MD} markdown Markdown to convert to HTML
+   * @param {jQuery HTML Element} container Element to append markdown
+   */
+  static appendMD(markdown, container) {
+    container.append($(md2html(markdown)));
+    container.find("table").addClass("table table-striped w-100");
+    container
+      .find("pre code.ksh")
+      .removeClass("ksh language-ksh")
+      .addClass("sh language-sh");
+    hljs.highlightAll();
   }
 }

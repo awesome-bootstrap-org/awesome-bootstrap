@@ -1,20 +1,20 @@
-export class Entrie {
+export class Entry {
   static #endPoint = "/api/entries";
   /**
-   * Create a new Entrie
-   * @param {Object} entrie
+   * Create a new Entry
+   * @param {Object} entry
    */
-  constructor(entrie) {
-    this.title = entrie.title;
-    this.type = entrie.type;
-    this.source = entrie.source;
-    this.name = entrie.name;
-    this.author = entrie.author;
-    this.supports = entrie.supports;
-    this.keywords = entrie.keywords;
-    this.license = entrie.license;
-    this.description = entrie.description;
-    this.homepage = entrie.homepage;
+  constructor(entry) {
+    this.title = entry.title;
+    this.type = entry.type;
+    this.source = entry.source;
+    this.name = entry.name;
+    this.author = entry.author;
+    this.supports = entry.supports;
+    this.keywords = entry.keywords;
+    this.license = entry.license;
+    this.description = entry.description;
+    this.homepage = entry.homepage;
   }
 
   /**
@@ -26,13 +26,52 @@ export class Entrie {
   static all(root) {
     return new Promise((resolve, reject) => {
       $.ajax({
-        url: `${root}${Entrie.#endPoint}`,
+        url: `${root}${Entry.#endPoint}`,
         method: "GET",
       })
         .done((data) => {
-          resolve(JSON.parse(data).map((entrie) => new Entrie(entrie)));
+          resolve(JSON.parse(data).map((entry) => new Entry(entry)));
         })
-        .fail((error) => {
+        .fail((_error) => {
+          reject(
+            new Error(
+              "There was an error loading the plugins infromation. Try in a few minutes and if the problem persists contact support.",
+              { cause: { title: "Oups!" } }
+            )
+          );
+        });
+    });
+  }
+
+  /**
+   * Get entry by name
+   * @static
+   * @param {String} name Entry name to found
+   * @param {String} root Path to root
+   * @returns {Promise} on resolve an array of entries is send to callback
+   */
+  static get(name, root) {
+    return new Promise((resolve, reject) => {
+      Entry.all(root)
+        .then((data) => {
+          let filter = data.filter((entry) => entry.name === name);
+          if (filter.length === 1) {
+            resolve(filter[0]);
+          } else if (filter.length > 1) {
+            reject(
+              new Error(`More than a plugin was found with name ${name}.`, {
+                cause: { title: "Oups!" },
+              })
+            );
+          } else {
+            reject(
+              new Error(`Any plugin found with name ${name}.`, {
+                cause: { title: "Oups!" },
+              })
+            );
+          }
+        })
+        .catch((error) => {
           reject(error);
         });
     });
@@ -67,7 +106,7 @@ export class Entrie {
   }
 
   /**
-   * Rende entrie card
+   * Rende entry card
    * @param {String} root Path to root
    * @returns {jQuery HTML Element}
    */
@@ -83,14 +122,16 @@ export class Entrie {
             this.renderLicense()
           ),
         $(`<span>${this.description}</span>`),
-        $('<div></div>').addClass("d-flex align-items-center justify-content-end").append(this.renderDetailLink(root))
+        $("<div></div>")
+          .addClass("d-flex align-items-center justify-content-end")
+          .append(this.renderDetailLink(root))
       ),
       $('<div class="card-footer"></div>').append(this.renderKeywords())
     );
   }
 
   /**
-   * Render entrie keywords
+   * Render entry keywords
    * @returns {jQuery HTML Element}
    */
   renderKeywords() {
@@ -98,7 +139,7 @@ export class Entrie {
   }
 
   /**
-   * Render entrie author
+   * Render entry author
    * @returns {jQuery HTML Element}
    */
   renderAuthor() {
@@ -112,7 +153,7 @@ export class Entrie {
   }
 
   /**
-   * Render entrie license
+   * Render entry license
    * @returns {jQuery HTML Element}
    */
   renderLicense() {
@@ -124,7 +165,7 @@ export class Entrie {
   }
 
   /**
-   * Render entrie homepage
+   * Render entry homepage
    * @returns {jQuery HTML Element}
    */
   renderHomepage() {
@@ -136,7 +177,7 @@ export class Entrie {
   }
 
   /**
-   * Render entrie detail link
+   * Render entry detail link
    * @param {String} root Path to root
    * @returns {jQuery HTML Element}
    */
@@ -144,12 +185,12 @@ export class Entrie {
     return this.#renderAttribute(
       "Details",
       "file-text",
-      `<a href="${root}/detail?source=${this.source}&name=${this.name}" title="Detail ${this.title}">See more</a>`
+      `<a href="${root}/detail?name=${this.name}" title="Detail ${this.title}">See more</a>`
     );
   }
 
   /**
-   * Render an entrie attribute
+   * Render an entry attribute
    * @private
    * @param {String} attribute Title for the icon
    * @param {String} icon Icon from bootstrap icon

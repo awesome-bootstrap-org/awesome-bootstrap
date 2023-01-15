@@ -1,4 +1,4 @@
-import { Entrie } from "./Entrie.js";
+import { Entry } from "./Entry.js";
 import { Page } from "./Page.js";
 import { isBootstrapDeprecated } from "./utilities.js";
 export class HomePage extends Page {
@@ -8,17 +8,20 @@ export class HomePage extends Page {
   constructor() {
     super();
     // Load All entries
-    Entrie.all(this.root)
+    Entry.all(this.root)
       .then((all) => {
         this.all = all;
         this.search();
       })
-      .catch((_error) => {
+      .catch((error) => {
         $(HomePage.formSelector).append(
           HomePage.renderAlert(
-            "There was an error loading the plugins infromation. Try in a few minutes and if the problem persists contact support.",
+            error.message,
             "danger",
-            '<i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i> Upss!'
+            `<i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i> ${
+              error?.cause?.title || "Oups!"
+            }`,
+            false
           )
         );
       });
@@ -89,10 +92,10 @@ export class HomePage extends Page {
 
     const grid = $(HomePage.cardContainerSelector).html("");
     this.all
-      .filter((entrie) => entrie.match(filterOptions))
-      .forEach((entrie) => {
+      .filter((entry) => entry.match(filterOptions))
+      .forEach((entry) => {
         grid.append(
-          $('<div class="col"></div>').append(entrie.renderCard(this.root))
+          $('<div class="col"></div>').append(entry.renderCard(this.root))
         );
       });
   }
