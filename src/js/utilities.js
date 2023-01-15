@@ -33,6 +33,7 @@ export function setImageRoot(root) {
 export function showdownConfig() {
   showdown.setOption("emoji", true);
   showdown.setOption("ghCodeBlocks", true);
+  showdown.setOption("simplifiedAutoLink", true);
   showdown.setOption("tables", true);
   showdown.setOption("tasklists", true);
 }
