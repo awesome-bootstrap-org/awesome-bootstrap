@@ -90,7 +90,7 @@ export class Entrie {
    * @returns {jQuery HTML Element}
    */
   renderKeywords() {
-    return this.#renderAttribute("tags", "tags", this.keywords.join(" "));
+    return this.#renderAttribute("Keywords", "tags", this.keywords.join(" "));
   }
 
   /**
