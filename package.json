@@ -5,7 +5,8 @@
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "grunt build"
+    "build": "grunt build",
+    "watch": "grunt dev"
   },
   "repository": {
     "type": "git",
