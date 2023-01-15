@@ -16,3 +16,9 @@ export function blinkImage(container) {
 export function isBootstrapDeprecated(version) {
   return ["1", "2", "3", "4"].includes(version);
 }
+
+export function setImageRoot(root) {
+  $("img[data-src]").each((_index, image) => {
+    $(image).attr("src", `${root}${$(image).attr("data-src")}`);
+  });
+}

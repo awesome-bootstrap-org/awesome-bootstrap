@@ -1,4 +1,13 @@
+import { setImageRoot, blinkImage } from "./utilities.js";
 export class Page {
+  /**
+   * Create a new Page and init component
+   */
+  constructor() {
+    setImageRoot(this.root);
+    $(".img-toggle").each((_index, container) => blinkImage(container));
+  }
+
   /**
    * Render an alert
    * @static

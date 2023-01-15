@@ -97,3 +97,11 @@ export class HomePage extends Page {
       });
   }
 }
+
+/**
+ * Main function
+ */
+$().ready(function () {
+  // Init
+  const _homepage = new HomePage();
+});
