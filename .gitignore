@@ -1,0 +1,20 @@
+# Node modules
+node_modules
+
+# Build
+dist/api
+dist/img
+dist/js
+dist/css
+dist/**/*.html
+
+# Logs
+*.log
+
+# Cache and config dirs and files
+.vscode
+.dccache
+.DS_Store
+
+# Cypress
+cypress/screenshots
