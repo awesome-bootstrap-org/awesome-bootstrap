@@ -1,0 +1,18 @@
+{
+  /**
+   * Template for adding an entry to list
+   * Please copy this file as ${entrie_name}.json, fill the info and remove all comments
+   */
+  "type": "", // Entrie type (lowercase): component | ui kit | template | playgrounds | design tools"
+  "source": "npm", // Source (lowercase): today the unique supported source is npm
+  "name": "${entrie_name}", // Entrie name ( for npm package name)
+  "author": {
+    "name": "",
+    "url": ""
+  }, // Autor: can be just a string with the name or an object with name and url
+  "supports": ["1", "2", "3", "4", "5"], // Bootstrap version support
+  "keywords": ["keyword_1", "keyword_2"], // Keyword for indexing the entrie
+  "license": "", // License (uppercase): if not standard mark as CUSTOM
+  "description": "", // Entrie description
+  "homepage": "" // Entrie home webpage url
+}
