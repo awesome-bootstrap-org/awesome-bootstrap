@@ -64,6 +64,7 @@ export class Page {
   static appendMD(markdown, container) {
     container.append($(md2html(markdown)));
     container.find("table").addClass("table table-striped w-100");
+    container.find("img").addClass("mw-100");
     container
       .find("pre code.ksh")
       .removeClass("ksh language-ksh")
