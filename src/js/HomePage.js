@@ -1,15 +1,27 @@
 import { Entrie } from "./Entrie.js";
-
-export class HomePage {
+import { Page } from "./Page.js";
+import { isBootstrapDeprecated } from "./utilities.js";
+export class HomePage extends Page {
   /**
    * Create a new HomePage
    */
   constructor() {
+    super();
     // Load All entries
-    Entrie.all(HomePage.root).then((all) => {
-      this.all = all;
-      this.search();
-    });
+    Entrie.all(HomePage.root)
+      .then((all) => {
+        this.all = all;
+        this.search();
+      })
+      .catch((_error) => {
+        $(HomePage.formSelector).append(
+          HomePage.renderAlert(
+            "There was an error loading the plugins infromation. Try in a few minutes and if the problem persists contact support.",
+            "danger",
+            '<i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i> Upss!'
+          )
+        );
+      });
 
     // Bind action performed to search form
     $(`${HomePage.formSelector} input, ${HomePage.formSelector} select`).on(
@@ -22,6 +34,7 @@ export class HomePage {
    * Get the path to root
    * @static
    * @returns {String} path to root
+   * @override
    */
   static get root() {
     return ".";
@@ -64,6 +77,17 @@ export class HomePage {
    */
   search() {
     const filterOptions = HomePage.filterOptions;
+    $(HomePage.formSelector).find(".alert").remove();
+    if (isBootstrapDeprecated(filterOptions.get("support"))) {
+      $(HomePage.formSelector).append(
+        HomePage.renderAlert(
+          "The selected Bootstrap version is deprecated. We recommend upgrading your application to a version with active support.",
+          "warning",
+          '<i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i> Deprecation warning!'
+        )
+      );
+    }
+
     const grid = $(HomePage.cardContainerSelector).html("");
     this.all
       .filter((entrie) => entrie.match(filterOptions))
