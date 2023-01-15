@@ -5,6 +5,7 @@ export class Entrie {
    * @param {Object} entrie
    */
   constructor(entrie) {
+    this.title = entrie.title;
     this.type = entrie.type;
     this.source = entrie.source;
     this.name = entrie.name;
@@ -71,7 +72,7 @@ export class Entrie {
    */
   renderCard() {
     return $('<div class="card h-100"></div>').append(
-      $('<h3 class="card-header"></h3>').text(this.name),
+      $('<h3 class="card-header"></h3>').text(this.title),
       $('<div class="card-body"></div>').append(
         $('<div class="d-flex align-items-center flex-wrap"></div>').append(
           this.renderAuthor(),

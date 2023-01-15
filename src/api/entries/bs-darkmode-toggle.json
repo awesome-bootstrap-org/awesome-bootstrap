@@ -1,4 +1,5 @@
 {
+  "title": "Bootstrap Darkmode Toggle",
   "type": "component",
   "source": "npm",
   "name": "bs-darkmode-toggle",

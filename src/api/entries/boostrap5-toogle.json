@@ -1,4 +1,5 @@
 {
+  "title": "Bootstrap Toggle",
   "type": "component",
   "source": "npm",
   "name": "bootstrap5-toggle",
