@@ -8,7 +8,7 @@ export class HomePage extends Page {
   constructor() {
     super();
     // Load All entries
-    Entrie.all(HomePage.root)
+    Entrie.all(this.root)
       .then((all) => {
         this.all = all;
         this.search();
@@ -32,11 +32,10 @@ export class HomePage extends Page {
 
   /**
    * Get the path to root
-   * @static
    * @returns {String} path to root
    * @override
    */
-  static get root() {
+  get root() {
     return ".";
   }
 
@@ -92,7 +91,9 @@ export class HomePage extends Page {
     this.all
       .filter((entrie) => entrie.match(filterOptions))
       .forEach((entrie) => {
-        grid.append($('<div class="col"></div>').append(entrie.renderCard()));
+        grid.append(
+          $('<div class="col"></div>').append(entrie.renderCard(this.root))
+        );
       });
   }
 }

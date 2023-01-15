@@ -34,10 +34,9 @@ export class Page {
 
   /**
    * Get the path to root
-   * @static
    * @returns {String} path to root
    */
-  static get root() {
+  get root() {
     return undefined;
   }
 }

@@ -68,18 +68,22 @@ export class Entrie {
 
   /**
    * Rende entrie card
+   * @param {String} root Path to root
    * @returns {jQuery HTML Element}
    */
-  renderCard() {
+  renderCard(root) {
     return $('<div class="card h-100"></div>').append(
       $('<h3 class="card-header"></h3>').text(this.title),
       $('<div class="card-body"></div>').append(
-        $('<div class="d-flex align-items-center flex-wrap"></div>').append(
-          this.renderAuthor(),
-          this.renderHomepage(),
-          this.renderLicense()
-        ),
-        $(`<span>${this.description}</span>`)
+        $("<div></div>")
+          .addClass("d-flex align-items-center flex-wrap")
+          .append(
+            this.renderAuthor(),
+            this.renderHomepage(),
+            this.renderLicense()
+          ),
+        $(`<span>${this.description}</span>`),
+        $('<div></div>').addClass("d-flex align-items-center justify-content-end").append(this.renderDetailLink(root))
       ),
       $('<div class="card-footer"></div>').append(this.renderKeywords())
     );
@@ -128,6 +132,19 @@ export class Entrie {
       "Website",
       "link-45deg",
       `<a href="${this.homepage}" target="_blank" rel="external noopener noreferrer" title="${this.name}">Website</a>`
+    );
+  }
+
+  /**
+   * Render entrie detail link
+   * @param {String} root Path to root
+   * @returns {jQuery HTML Element}
+   */
+  renderDetailLink(root) {
+    return this.#renderAttribute(
+      "Details",
+      "file-text",
+      `<a href="${root}/detail?source=${this.source}&name=${this.name}" title="Detail ${this.title}">See more</a>`
     );
   }
 
