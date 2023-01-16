@@ -33,6 +33,7 @@ export function setImageRoot(root) {
 export function showdownConfig() {
   showdown.setOption("emoji", true);
   showdown.setOption("ghCodeBlocks", true);
+  showdown.setOption("ghCompatibleHeaderId", true);
   showdown.setOption("simplifiedAutoLink", true);
   showdown.setOption("tables", true);
   showdown.setOption("tasklists", true);
@@ -45,5 +46,5 @@ export function showdownConfig() {
  */
 export function md2html(markdown) {
   const converter = new showdown.Converter();
-  return converter.makeHtml(markdown);
+  return DOMPurify.sanitize(converter.makeHtml(markdown));
 }
