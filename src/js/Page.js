@@ -75,4 +75,20 @@ export class Page {
       .addClass("sh language-sh");
     hljs.highlightAll();
   }
+
+  /**
+   * Get a spinner
+   * @returns {jQuery HTML Element} spinner
+   */
+  get spinner() {
+    return $("<div></div>")
+      .addClass("d-flex justify-content-center p-5")
+      .append(
+        $('<div role="status"></div>')
+          .addClass("spinner-border")
+          .append(
+            $("<span></span>").addClass("visually-hidden").text("Loading...")
+          )
+      );
+  }
 }

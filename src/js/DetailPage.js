@@ -16,11 +16,15 @@ export class DetailPage extends Page {
    */
   constructor() {
     super();
+    const loaderSpinner = this.spinner;
+    $(DetailPage.mainSelector).append(loaderSpinner);
     let params = new URL(document.location).searchParams;
     this.entry = Entry.get(params.get("name"), this.root)
       .then((data) => {
         this.entry = data;
-        this.load();
+        this.load().finally(() => {
+          loaderSpinner.remove();
+        });
       })
       .catch((error) => {
         $(DetailPage.mainSelector).append(
@@ -33,6 +37,7 @@ export class DetailPage extends Page {
             false
           )
         );
+        loaderSpinner.remove();
       });
   }
 
@@ -54,41 +59,53 @@ export class DetailPage extends Page {
     return "main";
   }
 
+  /**
+   * Fetch entry details form source and render
+   * @returns {Promise}
+   */
   load() {
-    switch (this.entry.source) {
-      case "npm":
-        this.entry = new NPMEntry({ ...this.entry });
-        this.entry
-          .load()
-          .then(() => {
-            DetailPage.appendMD(this.entry.readme, $(DetailPage.mainSelector));
-          })
-          .catch((error) => {
-            $(DetailPage.mainSelector).append(
-              DetailPage.renderAlert(
-                error.message,
-                "danger",
-                `<i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i> ${
-                  error?.cause?.title || "Oups!"
-                }`,
-                false
-              )
-            );
-          });
-        break;
+    return new Promise((resolve, reject) => {
+      switch (this.entry.source) {
+        case "npm":
+          this.entry = new NPMEntry({ ...this.entry });
+          this.entry
+            .load()
+            .then(() => {
+              DetailPage.appendMD(
+                this.entry.readme,
+                $(DetailPage.mainSelector)
+              );
+              resolve();
+            })
+            .catch((error) => {
+              $(DetailPage.mainSelector).append(
+                DetailPage.renderAlert(
+                  error.message,
+                  "danger",
+                  `<i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i> ${
+                    error?.cause?.title || "Oups!"
+                  }`,
+                  false
+                )
+              );
+              reject();
+            });
+          break;
 
-      default:
-        $(DetailPage.mainSelector).append(
-          DetailPage.renderAlert(
-            `Currently we don't support detail page for ${this.entry.source} source.`,
-            "info",
-            `<i class="bi bi-exclamation-circle" aria-hidden="true"></i> ${
-              error?.cause?.title || "Not Supported!"
-            }`,
-            false
-          )
-        );
-        break;
-    }
+        default:
+          $(DetailPage.mainSelector).append(
+            DetailPage.renderAlert(
+              `Currently we don't support detail page for ${this.entry.source} source.`,
+              "info",
+              `<i class="bi bi-exclamation-circle" aria-hidden="true"></i> ${
+                error?.cause?.title || "Not Supported!"
+              }`,
+              false
+            )
+          );
+          reject();
+          break;
+      }
+    });
   }
 }

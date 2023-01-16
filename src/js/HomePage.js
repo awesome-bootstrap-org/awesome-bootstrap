@@ -7,6 +7,8 @@ export class HomePage extends Page {
    */
   constructor() {
     super();
+    const spinner = this.spinner;
+    $(HomePage.formSelector).append(spinner);
     // Load All entries
     Entry.all(this.root)
       .then((all) => {
@@ -24,6 +26,9 @@ export class HomePage extends Page {
             false
           )
         );
+      })
+      .finally(() => {
+        spinner.remove();
       });
 
     // Bind action performed to search form
