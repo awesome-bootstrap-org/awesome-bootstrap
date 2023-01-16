@@ -90,7 +90,7 @@ export class Entry {
     ) {
       if (filterOptions.get("search")) {
         const regexp = new RegExp(
-          filterOptions.get("search").trim().replace(" ", "|"),
+          filterOptions.get("search").trim().replace(/ /g, "|"),
           "i"
         );
         return (

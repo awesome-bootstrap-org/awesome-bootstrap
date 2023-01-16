@@ -31,9 +31,13 @@ export class Page {
   ) {
     let $alert = $('<div class="alert" role="alert"></div>')
       .addClass(`alert-${style}`)
-      .append($('<div class="alert-body"></div>').html(text));
+      .append(
+        $('<div class="alert-body"></div>').html(DOMPurify.sanitize(text))
+      );
     if (heading) {
-      $alert.prepend($('<h4 class="alert-heading"></h4>').html(heading));
+      $alert.prepend(
+        $('<h4 class="alert-heading"></h4>').html(DOMPurify.sanitize(heading))
+      );
     }
     if (isClosable) {
       $alert
