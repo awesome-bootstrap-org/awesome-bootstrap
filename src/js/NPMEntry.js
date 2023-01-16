@@ -10,6 +10,10 @@ export class NPMEntry extends Entry {
     super(entry);
   }
 
+  /**
+   * Fetch Entry data from source
+   * @returns {Promise}
+   */
   load() {
     return new Promise((resolve, reject) => {
       $.ajax({

@@ -18,6 +18,14 @@ export class Entry {
   }
 
   /**
+   * Fetch Entry data from source
+   * @returns {Promise}
+   */
+  load() {
+    throw new Error("Interface not implemented.");
+  }
+
+  /**
    * Get all entries
    * @static
    * @param {String} root Path to root
