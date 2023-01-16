@@ -1,0 +1,245 @@
+/*!
+  Theme: Boostrap colorscheme toggle
+  Description: Theme with Bootstrap colorscheme integration base on isbl-editor-light and isbl-editor-dark themes 
+  Author: (c) Pablo Alcaraz <pablo@alcarazm.es>
+  License: MIT
+  Touched: 2022
+*/
+
+/*** FONTS ***/
+/* cyrillic-ext */
+@font-face {
+  font-family: "Fira Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Mono Regular"), local("FiraMono-Regular"),
+    url(https://fonts.gstatic.com/s/firamono/v5/zU7WTKudYj3kyp83WUTNRIX0hVgzZQUfRDuZrPvH3D8.woff2)
+      format("woff2");
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: "Fira Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Mono Regular"), local("FiraMono-Regular"),
+    url(https://fonts.gstatic.com/s/firamono/v5/1Ci0A82NC1vmnBGZ40JtDIX0hVgzZQUfRDuZrPvH3D8.woff2)
+      format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: "Fira Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Mono Regular"), local("FiraMono-Regular"),
+    url(https://fonts.gstatic.com/s/firamono/v5/CNcOMq0eKtUFFFCp0lHQLIX0hVgzZQUfRDuZrPvH3D8.woff2)
+      format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: "Fira Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Mono Regular"), local("FiraMono-Regular"),
+    url(https://fonts.gstatic.com/s/firamono/v5/15JCs9lpil7lsTP978NDCoX0hVgzZQUfRDuZrPvH3D8.woff2)
+      format("woff2");
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Fira Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Mono Regular"), local("FiraMono-Regular"),
+    url(https://fonts.gstatic.com/s/firamono/v5/4JBDq56CMkU462bp0T-W9IX0hVgzZQUfRDuZrPvH3D8.woff2)
+      format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Fira Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Mono Regular"), local("FiraMono-Regular"),
+    url(https://fonts.gstatic.com/s/firamono/v5/SlRWfq1zeqXiYWAN-lnG-pBw1xU1rKptJj_0jans920.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+    U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/*** FORMAT ***/
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  font-family: "Fira Mono", monospace;
+  font-size: 1em;
+}
+code.hljs {
+  padding: 3px 5px;
+}
+.hljs-section,
+.hljs-title,
+.hljs-attribute,
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-built_in,
+.hljs-literal,
+.hljs-class {
+  font-weight: 700;
+}
+.hljs-title > .hljs-built_in {
+  font-weight: 400;
+}
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
+
+/*** LIGHT COLOR MODE ***/
+
+[data-bs-theme="light"] .hljs {
+  background: #f0f0f0;
+}
+[data-bs-theme="light"] .hljs,
+[data-bs-theme="light"] .hljs-subst {
+  color: #444;
+}
+[data-bs-theme="light"] .hljs-comment {
+  color: #555;
+  font-style: italic;
+}
+[data-bs-theme="light"] .hljs-attribute,
+[data-bs-theme="light"] .hljs-doctag,
+[data-bs-theme="light"] .hljs-keyword,
+[data-bs-theme="light"] .hljs-meta .hljs-keyword,
+[data-bs-theme="light"] .hljs-name,
+[data-bs-theme="light"] .hljs-selector-tag {
+  color: #000;
+}
+[data-bs-theme="light"] .hljs-string {
+  color: navy;
+}
+[data-bs-theme="light"] .hljs-deletion,
+[data-bs-theme="light"] .hljs-number,
+[data-bs-theme="light"] .hljs-quote,
+[data-bs-theme="light"] .hljs-selector-class,
+[data-bs-theme="light"] .hljs-selector-id,
+[data-bs-theme="light"] .hljs-template-tag,
+[data-bs-theme="light"] .hljs-type {
+  color: #800;
+}
+[data-bs-theme="light"] .hljs-link,
+[data-bs-theme="light"] .hljs-regexp,
+[data-bs-theme="light"] .hljs-selector-attr,
+[data-bs-theme="light"] .hljs-selector-pseudo,
+[data-bs-theme="light"] .hljs-symbol,
+[data-bs-theme="light"] .hljs-template-variable,
+[data-bs-theme="light"] .hljs-variable {
+  color: #5e1700;
+}
+[data-bs-theme="light"] .hljs-built_in,
+[data-bs-theme="light"] .hljs-literal {
+  color: navy;
+}
+[data-bs-theme="light"] .hljs-addition,
+[data-bs-theme="light"] .hljs-bullet,
+[data-bs-theme="light"] .hljs-code {
+  color: #397300;
+}
+[data-bs-theme="light"] .hljs-class {
+  color: #6f1c00;
+}
+[data-bs-theme="light"] .hljs-section,
+[data-bs-theme="light"] .hljs-title {
+  color: #fb2c00;
+}
+[data-bs-theme="light"] .hljs-title > .hljs-built_in {
+  color: teal;
+}
+[data-bs-theme="light"] .hljs-meta {
+  color: #1f7199;
+}
+[data-bs-theme="light"] .hljs-meta .hljs-string {
+  color: #4d99bf;
+}
+
+/*** DARK COLOR MODE ***/
+[data-bs-theme="dark"] .hljs {
+  background: #404040;
+}
+[data-bs-theme="dark"] .hljs,
+[data-bs-theme="dark"] .hljs-subst {
+  color: #f0f0f0;
+}
+[data-bs-theme="dark"] .hljs-comment {
+  color: #b5b5b5;
+  font-style: italic;
+}
+[data-bs-theme="dark"] .hljs-attribute,
+[data-bs-theme="dark"] .hljs-doctag,
+[data-bs-theme="dark"] .hljs-keyword,
+[data-bs-theme="dark"] .hljs-meta .hljs-keyword,
+[data-bs-theme="dark"] .hljs-name,
+[data-bs-theme="dark"] .hljs-selector-tag {
+  color: #f0f0f0;
+}
+[data-bs-theme="dark"] .hljs-string {
+  color: #97bf0d;
+}
+[data-bs-theme="dark"] .hljs-deletion,
+[data-bs-theme="dark"] .hljs-number,
+[data-bs-theme="dark"] .hljs-quote,
+[data-bs-theme="dark"] .hljs-selector-class,
+[data-bs-theme="dark"] .hljs-selector-id,
+[data-bs-theme="dark"] .hljs-template-tag,
+[data-bs-theme="dark"] .hljs-type {
+  color: #f0f0f0;
+}
+[data-bs-theme="dark"] .hljs-link,
+[data-bs-theme="dark"] .hljs-regexp,
+[data-bs-theme="dark"] .hljs-selector-attr,
+[data-bs-theme="dark"] .hljs-selector-pseudo,
+[data-bs-theme="dark"] .hljs-symbol,
+[data-bs-theme="dark"] .hljs-template-variable,
+[data-bs-theme="dark"] .hljs-variable {
+  color: #e2c696;
+}
+[data-bs-theme="dark"] .hljs-built_in,
+[data-bs-theme="dark"] .hljs-literal {
+  color: #97bf0d;
+}
+[data-bs-theme="dark"] .hljs-addition,
+[data-bs-theme="dark"] .hljs-bullet,
+[data-bs-theme="dark"] .hljs-code {
+  color: #397300;
+}
+[data-bs-theme="dark"] .hljs-class {
+  color: #ce9d4d;
+}
+[data-bs-theme="dark"] .hljs-section,
+[data-bs-theme="dark"] .hljs-title {
+  color: #df471e;
+}
+[data-bs-theme="dark"] .hljs-title > .hljs-built_in {
+  color: #81bce9;
+}
+[data-bs-theme="dark"] .hljs-meta {
+  color: #1f7199;
+}
+[data-bs-theme="dark"] .hljs-meta .hljs-string {
+  color: #4d99bf;
+}
