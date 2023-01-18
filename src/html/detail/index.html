@@ -1,48 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta
+      name="description"
+      content="A curated list of amazing Bootstrap tools and themes." />
+    <meta name="keywords" content="bootstrap, awesome, awesome-list" />
+    <meta name="author" content="https://github.com/palcarazm" />
+    <meta name="version" content="v1.0.0-beta" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="1 month" />
+    <title>Awesome Bootstrap | v1</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-  <meta name="description" content="A curated list of amazing Bootstrap tools and themes." />
-  <meta name="keywords" content="bootstrap, awesome, awesome-list" />
-  <meta name="author" content="https://github.com/palcarazm" />
-  <meta name="version" content="v1.0.0-beta" />
-  <meta name="robots" content="index, follow" />
-  <meta name="revisit-after" content="1 month" />
-  <title>Awesome Bootstrap | v1</title>
-  <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
+    <meta property="og:title" content="Awesome Bootstrap" />
+    <meta
+      property="og:description"
+      content="A curated list of amazing Bootstrap tools and themes." />
+    <meta
+      property="og:url"
+      content="https://palcarazm.github.io/awesome-bootstrap/" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/palcarazm/awesome-bootstrap/gh-pages/img/card.png" />
+    <meta property="og:image:width" content="728" />
+    <meta property="og:image:height" content="364" />
 
-  <meta property="og:title" content="Awesome Bootstrap" />
-  <meta property="og:description" content="A curated list of amazing Bootstrap tools and themes." />
-  <meta property="og:url" content="https://palcarazm.github.io/awesome-bootstrap/" />
-  <meta property="og:image"
-    content="https://raw.githubusercontent.com/palcarazm/awesome-bootstrap/gh-pages/img/card.png" />
-  <meta property="og:image:width" content="728" />
-  <meta property="og:image:height" content="364" />
+    <meta name="twitter:title" content="Awesome Bootstrap" />
+    <meta
+      name="twitter:description"
+      content="A curated list of amazing Bootstrap tools and themes." />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/palcarazm/awesome-bootstrap/gh-pages/img/card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <meta name="twitter:title" content="Awesome Bootstrap" />
-  <meta name="twitter:description" content="A curated list of amazing Bootstrap tools and themes." />
-  <meta name="twitter:image"
-    content="https://raw.githubusercontent.com/palcarazm/awesome-bootstrap/gh-pages/img/card.png" />
-  <meta name="twitter:card" content="summary_large_image" />
+    {{head_dependencies}}
+    <link rel="stylesheet" href="../css/highlightjs-theme.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
 
-  {{head_dependencies}}
-  <link rel="stylesheet" href="../css/highlightjs-theme.css" />
-  <link rel="stylesheet" href="../css/styles.css" />
-</head>
-
-<body>
-  {{header}}
-  <div class="container py-2">
-    <div class="row">
-      {{aside}}
-      <main class="col-md-9 col-lg-10"></main>
+  <body>
+    {{header}}
+    <div class="container py-2">
+      <div class="row">
+        {{aside}}
+        <main class="col-md-9 col-lg-10">
+          <section id="content-header" class="mb-2"></section>
+          <section id="content-body"></section>
+        </main>
+      </div>
     </div>
-  </div>
-  {{footer}} {{footer_dependencies}}
-  <script src="../js/DetailPage.js" type="module"></script>
-</body>
-
+    {{footer}} {{footer_dependencies}}
+    <script src="../js/DetailPage.js" type="module"></script>
+  </body>
 </html>
