@@ -1,3 +1,4 @@
+import { metric } from "./utilities.js";
 export class Entry {
   static #endPoint = "/api/entries";
   /**
@@ -147,7 +148,7 @@ export class Entry {
       this.renderAuthor(),
       this.renderHomepage()
     );
-
+    if (this.cdn) container.append(this.renderCDN());
     if (this.quality) container.append(this.renderQuality());
 
     return container;
@@ -221,6 +222,24 @@ export class Entry {
       "tag",
       `${this.lastRelease || "Unknown"}`
     );
+  }
+
+  /**
+   * Render entry CDN
+   * @returns {jQuery HTML Element}
+   */
+  renderCDN() {
+    let text;
+    if (this.cdn?.url && this.cdn?.hits) {
+      text = `<a href="${this.cdn.url}" title="CDN for ${
+        this.title
+      }" target="_blank">${metric(this.cdn.hits)} hits/month</a>`;
+    } else if (this.cdn?.hits) {
+      text = `${metric(this.cdn.hits)} hits/month`;
+    } else if (this.cdn?.url) {
+      text = `<a href="${this.cdn.url}" title="CDN for ${this.title}" target="_blank">See CDN</a>`;
+    }
+    return this.#renderAttribute("CDN", "download", `${text || "Unknown"}`);
   }
 
   /**
