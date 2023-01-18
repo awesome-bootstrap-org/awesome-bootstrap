@@ -1,5 +1,6 @@
 import { datediff, datediff2string, metric } from "./utilities.js";
 export class Entry {
+  static _timeout = 1500;
   static #endPoint = "/api/entries";
   /**
    * Create a new Entry

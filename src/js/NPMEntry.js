@@ -23,6 +23,7 @@ export class NPMEntry extends Entry {
       $.ajax({
         url: `${NPMEntry.#npmEndpoint}${this.name}`,
         method: "GET",
+        timeout: NPMEntry._timeout,
       })
         .done((data) => {
           const { readme, name, homepage } = data;
@@ -68,6 +69,7 @@ export class NPMEntry extends Entry {
       /*$.ajax({
         url: `${NPMEntry.#packageQualityEndpoint}${this.name}`,
         method: "GET",
+        timeout: NPMEntry._timeout,
       })
         .done((data) => {
           const { quality } = data;
@@ -94,6 +96,7 @@ export class NPMEntry extends Entry {
       $.ajax({
         url: `${NPMEntry.#jsDelivrEndpoint}${this.name}/stats/date/month`,
         method: "GET",
+        timeout: NPMEntry._timeout,
       })
         .done((data) => {
           const { total } = data;
@@ -124,7 +127,7 @@ export class NPMEntry extends Entry {
       $.ajax({
         url: `${NPMEntry.#snykVulnerabilities}${this.name}${tag}`,
         method: "GET",
-        timeout: 1500,
+        timeout: NPMEntry._timeout,
       })
         .done((data) => {
           this.vulnerabilities = {
