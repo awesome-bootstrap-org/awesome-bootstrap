@@ -103,7 +103,7 @@ export function datediff(date, baseDate = "") {
     baseDate = new Date();
   }
   let timediff = baseDate - date;
-  if (isNaN(timediff)) return undefined;
+  if (Number.isNaN(timediff)) return undefined;
   return {
     years: baseDate.getFullYear() - date.getFullYear(),
     months:
