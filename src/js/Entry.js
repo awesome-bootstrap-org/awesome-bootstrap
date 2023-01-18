@@ -159,6 +159,9 @@ export class Entry {
     if (this.quality) {
       container.append(this.renderQuality());
     }
+    if (this.vulnerabilities) {
+      container.append(this.renderVulnerabilities());
+    }
 
     return container;
   }
@@ -261,6 +264,22 @@ export class Entry {
       text = `<a href="${this.cdn.url}" title="CDN for ${this.title}" target="_blank">See CDN</a>`;
     }
     return this.#renderAttribute("CDN", "download", `${text || "Unknown"}`);
+  }
+
+  /**
+   * Render entry vulnerabilities
+   * @returns {jQuery HTML Element}
+   */
+  renderVulnerabilities() {
+    return this.#renderAttribute(
+      "Vulnerabilities",
+      "exclamation-square",
+      `<a href="${
+        this.vulnerabilities?.url || "#"
+      }" title="Vulnerabilities for ${this.title}" target="_blank">${
+        this.vulnerabilities?.count || "Unknown"
+      }</a>`
+    );
   }
 
   /**

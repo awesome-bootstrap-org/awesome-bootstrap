@@ -4,6 +4,8 @@ export class NPMEntry extends Entry {
   static #npmEndpoint = "https://registry.npmjs.org/";
   static #packageQualityEndpoint = "https://packagequality.com/package/";
   static #jsDelivrEndpoint = "https://data.jsdelivr.com/v1/package/npm/";
+  static #snykVulnerabilities =
+    "https://img.shields.io/snyk/vulnerabilities/npm/";
   /**
    * Create a new NPM Entry
    * @param {Object} entry
@@ -36,7 +38,11 @@ export class NPMEntry extends Entry {
             );
           }
 
-          Promise.all([this.fetchQuality(), this.fetchCDN()])
+          Promise.all([
+            this.fetchQuality(),
+            this.fetchCDN(),
+            this.fetchVulnerabilities(),
+          ])
             .catch(() => {})
             .finally(() => {
               resolve();
@@ -94,6 +100,38 @@ export class NPMEntry extends Entry {
           this.cdn = {
             hits: DOMPurify.sanitize(total),
             url: `https://www.jsdelivr.com/package/npm/${this.name}`,
+          };
+          resolve();
+        })
+        .fail((_error) => {
+          reject(
+            new Error(
+              "There was an error loading the plugins information from jsDelivr.",
+              { cause: { title: "Oups!" } }
+            )
+          );
+        });
+    });
+  }
+
+  /**
+   * Fetch Vulnerabilities form synk
+   * @returns {Promise}
+   */
+  fetchVulnerabilities() {
+    return new Promise((resolve, reject) => {
+      const tag = this.lastRelease?.tag ? `@${this.lastRelease?.tag}` : "";
+      $.ajax({
+        url: `${NPMEntry.#snykVulnerabilities}${this.name}${tag}`,
+        method: "GET",
+        timeout: 1500,
+      })
+        .done((data) => {
+          this.vulnerabilities = {
+            count: $(DOMPurify.sanitize(data.querySelector("svg")))
+              .attr("aria-label")
+              .replace(/^vulnerabilities: /, ""),
+            url: `https://snyk.io/advisor/npm-package/${this.name}`,
           };
           resolve();
         })
