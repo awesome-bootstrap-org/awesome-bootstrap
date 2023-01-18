@@ -27,7 +27,14 @@ export class NPMEntry extends Entry {
           this.readme = readme;
           this.name = DOMPurify.sanitize(name);
           this.homepage = DOMPurify.sanitize(homepage);
-          this.lastRelease = DOMPurify.sanitize(data["dist-tags"]?.latest);
+          this.lastRelease = {
+            tag: DOMPurify.sanitize(data["dist-tags"]?.latest),
+          };
+          if (this.lastRelease.tag && data.time) {
+            this.lastRelease.timestamp = DOMPurify.sanitize(
+              data.time[this.lastRelease.tag]
+            );
+          }
 
           Promise.all([this.fetchQuality(), this.fetchCDN()])
             .catch(() => {})

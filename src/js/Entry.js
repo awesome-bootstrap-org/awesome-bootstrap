@@ -1,4 +1,4 @@
-import { metric } from "./utilities.js";
+import { datediff, datediff2string, metric } from "./utilities.js";
 export class Entry {
   static #endPoint = "/api/entries";
   /**
@@ -142,14 +142,23 @@ export class Entry {
     const container = $("<div></div>").addClass(
       "d-flex align-items-center flex-wrap"
     );
-    if (this.lastRelease) container.append(this.renderLastRelease());
+    if (this.lastRelease?.tag) {
+      container.append(this.renderLastReleaseTag());
+    }
+    if (this.lastRelease?.timestamp) {
+      container.append(this.renderLastReleaseTime());
+    }
     container.append(
       this.renderLicense(),
       this.renderAuthor(),
       this.renderHomepage()
     );
-    if (this.cdn) container.append(this.renderCDN());
-    if (this.quality) container.append(this.renderQuality());
+    if (this.cdn) {
+      container.append(this.renderCDN());
+    }
+    if (this.quality) {
+      container.append(this.renderQuality());
+    }
 
     return container;
   }
@@ -213,14 +222,26 @@ export class Entry {
   }
 
   /**
-   * Render entry last release
+   * Render entry last release tag
    * @returns {jQuery HTML Element}
    */
-  renderLastRelease() {
+  renderLastReleaseTag() {
     return this.#renderAttribute(
-      "Last Release",
+      "Last release tag",
       "tag",
-      `${this.lastRelease || "Unknown"}`
+      `${this.lastRelease?.tag || "Unknown"}`
+    );
+  }
+
+  /**
+   * Render entry last release time
+   * @returns {jQuery HTML Element}
+   */
+  renderLastReleaseTime() {
+    return this.#renderAttribute(
+      "Published last release",
+      "calendar",
+      `${datediff2string(datediff(this.lastRelease?.timestamp)) || ""}`
     );
   }
 

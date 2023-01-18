@@ -83,3 +83,58 @@ export function metric(n) {
   }
   return `${n}`;
 }
+
+export function datediff(date1, date2 = "") {
+  const second = 1000,
+    minute = second * 60,
+    hour = minute * 60,
+    day = hour * 24,
+    week = day * 7;
+  date1 = new Date(date1);
+  if (date2) {
+    date2 = new Date(date2);
+  } else {
+    date2 = new Date();
+  }
+  let timediff = date2 - date1;
+  if (isNaN(timediff)) return undefined;
+  return {
+    years: date2.getFullYear() - date1.getFullYear(),
+    months:
+      date2.getFullYear() * 12 +
+      date2.getMonth() -
+      (date1.getFullYear() * 12 + date1.getMonth()),
+    weeks: Math.floor(timediff / week),
+    days: Math.floor(timediff / day),
+    hours: Math.floor(timediff / hour),
+    minutes: Math.floor(timediff / minute),
+    seconds: Math.floor(timediff / second),
+  };
+}
+
+export function datediff2string(datediff) {
+  const map = [
+    { key: "years", singular: "year", plural: "years" },
+    { key: "months", singular: "month", plural: "months" },
+    { key: "days", singular: "day", plural: "days" },
+    { key: "hours", singular: "hour", plural: "hours" },
+    { key: "minutes", singular: "minute", plural: "minutes" },
+  ];
+  let result = null;
+  for (const interval of map) {
+    if (datediff[interval.key] === 1) {
+      result = `1 ${interval.singular} ago`;
+      break;
+    } else if (datediff[interval.key] === -1) {
+      result = `1 ${interval.singular} later`;
+      break;
+    } else if (datediff[interval.key] > 1) {
+      result = `${datediff[interval.key]} ${interval.plural} ago`;
+      break;
+    } else if (datediff[interval.key] < -1) {
+      result = `${datediff[interval.key]} ${interval.plural} later`;
+      break;
+    }
+  }
+  return result;
+}
