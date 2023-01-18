@@ -25,9 +25,9 @@ export class NPMEntry extends Entry {
         .done((data) => {
           const { readme, name, homepage } = data;
           this.readme = readme;
-          this.name = name;
-          this.homepage = homepage;
-          this.lastRelease = data["dist-tags"]?.latest;
+          this.name = DOMPurify.sanitize(name);
+          this.homepage = DOMPurify.sanitize(homepage);
+          this.lastRelease = DOMPurify.sanitize(data["dist-tags"]?.latest);
 
           Promise.all([this.fetchQuality(), this.fetchCDN()])
             .catch(() => {})
@@ -58,7 +58,7 @@ export class NPMEntry extends Entry {
       })
         .done((data) => {
           const { quality } = data;
-          this.quality = quality;
+          this.quality = DOMPurify.sanitize(quality);
           resolve();
         })
         .fail((_error) => {
@@ -85,7 +85,7 @@ export class NPMEntry extends Entry {
         .done((data) => {
           const { total } = data;
           this.cdn = {
-            hits: total,
+            hits: DOMPurify.sanitize(total),
             url: `https://www.jsdelivr.com/package/npm/${this.name}`,
           };
           resolve();

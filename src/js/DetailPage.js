@@ -6,7 +6,7 @@ import { isBootstrapDeprecated } from "./utilities.js";
 /**
  * Main function
  */
-$().ready(function () {
+jQuery(function () {
   // Init
   const _DetailPage = new DetailPage();
 });
@@ -19,7 +19,7 @@ export class DetailPage extends Page {
     const loaderSpinner = this.spinner;
     $(DetailPage.bodySelector).append(loaderSpinner);
     let params = new URL(document.location).searchParams;
-    this.entry = Entry.get(params.get("name"), this.root)
+    this.entry = Entry.get(DOMPurify.sanitize(params.get("name")), this.root)
       .then((data) => {
         this.entry = data;
         $(DetailPage.headerSelector)
