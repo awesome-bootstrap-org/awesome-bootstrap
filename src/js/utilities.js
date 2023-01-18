@@ -84,26 +84,32 @@ export function metric(n) {
   return `${n}`;
 }
 
-export function datediff(date1, date2 = "") {
+/**
+ * Get the diference between a date and a reference date in different intervals
+ * @param {String} date Date to compare
+ * @param {String} baseDate Reference date to compare
+ * @returns {Object} Diference in different intervals
+ */
+export function datediff(date, baseDate = "") {
   const second = 1000,
     minute = second * 60,
     hour = minute * 60,
     day = hour * 24,
     week = day * 7;
-  date1 = new Date(date1);
-  if (date2) {
-    date2 = new Date(date2);
+  date = new Date(date);
+  if (baseDate) {
+    baseDate = new Date(baseDate);
   } else {
-    date2 = new Date();
+    baseDate = new Date();
   }
-  let timediff = date2 - date1;
+  let timediff = baseDate - date;
   if (isNaN(timediff)) return undefined;
   return {
-    years: date2.getFullYear() - date1.getFullYear(),
+    years: baseDate.getFullYear() - date.getFullYear(),
     months:
-      date2.getFullYear() * 12 +
-      date2.getMonth() -
-      (date1.getFullYear() * 12 + date1.getMonth()),
+      baseDate.getFullYear() * 12 +
+      baseDate.getMonth() -
+      (date.getFullYear() * 12 + date.getMonth()),
     weeks: Math.floor(timediff / week),
     days: Math.floor(timediff / day),
     hours: Math.floor(timediff / hour),
@@ -112,6 +118,11 @@ export function datediff(date1, date2 = "") {
   };
 }
 
+/**
+ * Transform a diference date object to string
+ * @param {Object} datediff Diference in different intervals
+ * @returns {String | null}
+ */
 export function datediff2string(datediff) {
   const map = [
     { key: "years", singular: "year", plural: "years" },
