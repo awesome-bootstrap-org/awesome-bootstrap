@@ -21,9 +21,17 @@ export class NPMEntry extends Entry {
         method: "GET",
       })
         .done((data) => {
-          const { readme } = data;
+          const { readme, name, homepage } = data;
           this.readme = readme;
-          resolve(null);
+          this.name = name;
+          this.homepage = homepage;
+          this.lastRelease = data["dist-tags"]?.latest;
+
+          Promise.all([this.fetchQuality()])
+            .catch(() => {})
+            .finally(() => {
+              resolve();
+            });
         })
         .fail((_error) => {
           reject(
@@ -33,6 +41,32 @@ export class NPMEntry extends Entry {
             )
           );
         });
+    });
+  }
+
+  /**
+   * Fetch package quality form Package Quality
+   * @returns {Promise}
+   */
+  fetchQuality() {
+    return new Promise((resolve, reject) => {
+      /*$.ajax({
+        url: `${NPMEntry.#packageQualityEndpoint}${this.name}`,
+        method: "GET",
+      })
+        .done((data) => {
+          const { quality } = data;
+          this.quality = quality;
+          resolve();
+        })
+        .fail((_error) => {
+          reject(
+            new Error(
+              "There was an error loading the plugins information from Package Quality.",
+              { cause: { title: "Oups!" } }
+            )
+          );
+        });*/ resolve(); // WAITING FIX https://github.com/alexfernandez/package-quality/issues/45
     });
   }
 }

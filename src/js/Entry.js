@@ -122,13 +122,7 @@ export class Entry {
     return $('<div class="card h-100"></div>').append(
       $('<h3 class="card-header"></h3>').text(this.title),
       $('<div class="card-body"></div>').append(
-        $("<div></div>")
-          .addClass("d-flex align-items-center flex-wrap")
-          .append(
-            this.renderAuthor(),
-            this.renderHomepage(),
-            this.renderLicense()
-          ),
+        this.renderHeaderBadges(root),
         $(`<span>${this.description}</span>`),
         $("<div></div>")
           .addClass("d-flex align-items-center justify-content-end")
@@ -136,6 +130,27 @@ export class Entry {
       ),
       $('<div class="card-footer"></div>').append(this.renderKeywords())
     );
+  }
+
+  /**
+   * Render entry header badges
+   * @param {String} root Path to root
+   * @returns {jQuery HTML Element}
+   */
+  renderHeaderBadges(root) {
+    const container = $("<div></div>").addClass(
+      "d-flex align-items-center flex-wrap"
+    );
+    if (this.lastRelease) container.append(this.renderLastRelease());
+    container.append(
+      this.renderLicense(),
+      this.renderAuthor(),
+      this.renderHomepage()
+    );
+
+    if (this.quality) container.append(this.renderQuality());
+
+    return container;
   }
 
   /**
@@ -181,6 +196,30 @@ export class Entry {
       "Website",
       "link-45deg",
       `<a href="${this.homepage}" target="_blank" rel="external noopener noreferrer" title="${this.name}">Website</a>`
+    );
+  }
+
+  /**
+   * Render entry quality
+   * @returns {jQuery HTML Element}
+   */
+  renderQuality() {
+    return this.#renderAttribute(
+      "Quality",
+      "check2-circle",
+      `${this.quality || "Unknown"}`
+    );
+  }
+
+  /**
+   * Render entry last release
+   * @returns {jQuery HTML Element}
+   */
+  renderLastRelease() {
+    return this.#renderAttribute(
+      "Last Release",
+      "tag",
+      `${this.lastRelease || "Unknown"}`
     );
   }
 
