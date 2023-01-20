@@ -1,7 +1,9 @@
 import { Entry } from "./Entry.js";
 
 export class NPMEntry extends Entry {
-  static #npmEndpoint = "https://registry.npmjs.org/";
+  static #npmRegistryEndpoint = "https://registry.npmjs.org/";
+  static #npmDownloadsEndpoint =
+    "https://api.npmjs.org/downloads/point/last-month/";
   static #packageQualityEndpoint = "https://packagequality.com/package/";
   static #jsDelivrEndpoint = "https://data.jsdelivr.com/v1/package/npm/";
   static #snykVulnerabilities =
@@ -21,7 +23,7 @@ export class NPMEntry extends Entry {
   load() {
     return new Promise((resolve, reject) => {
       $.ajax({
-        url: `${NPMEntry.#npmEndpoint}${this.name}`,
+        url: `${NPMEntry.#npmRegistryEndpoint}${this.name}`,
         method: "GET",
         timeout: NPMEntry._timeout,
       })
@@ -33,6 +35,10 @@ export class NPMEntry extends Entry {
           this.lastRelease = {
             tag: DOMPurify.sanitize(data["dist-tags"]?.latest),
           };
+          this.package = {
+            url: `https://www.npmjs.com/package/${this.name}`,
+            name: "NPM",
+          };
           if (this.lastRelease.tag && data.time) {
             this.lastRelease.timestamp = DOMPurify.sanitize(
               data.time[this.lastRelease.tag]
@@ -41,6 +47,7 @@ export class NPMEntry extends Entry {
 
           Promise.all([
             this.fetchQuality(),
+            this.fetchDownloads(),
             this.fetchCDN(),
             this.fetchVulnerabilities(),
           ])
@@ -84,6 +91,33 @@ export class NPMEntry extends Entry {
             )
           );
         });*/ resolve(); // WAITING FIX https://github.com/alexfernandez/package-quality/issues/45
+    });
+  }
+
+  /**
+   * Fetch Downloads form NPM
+   * @returns {Promise}
+   */
+  fetchDownloads() {
+    return new Promise((resolve, reject) => {
+      $.ajax({
+        url: `${NPMEntry.#npmDownloadsEndpoint}${this.name}`,
+        method: "GET",
+        timeout: NPMEntry._timeout,
+      })
+        .done((data) => {
+          const { downloads } = data;
+          this.package.downloads = DOMPurify.sanitize(downloads);
+          resolve();
+        })
+        .fail((_error) => {
+          reject(
+            new Error(
+              "There was an error loading the plugins downloads from NPM.",
+              { cause: { title: "Oups!" } }
+            )
+          );
+        });
     });
   }
 

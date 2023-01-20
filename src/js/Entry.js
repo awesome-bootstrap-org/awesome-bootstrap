@@ -154,6 +154,9 @@ export class Entry {
       this.renderAuthor(),
       this.renderHomepage()
     );
+    if (this.package) {
+      container.append(this.renderPackage());
+    }
     if (this.cdn) {
       container.append(this.renderCDN());
     }
@@ -246,6 +249,34 @@ export class Entry {
       "Published last release",
       "calendar",
       `${datediff2string(datediff(this.lastRelease?.timestamp)) || ""}`
+    );
+  }
+
+  /**
+   * Render entry PAckage
+   * @returns {jQuery HTML Element}
+   */
+  renderPackage() {
+    let text;
+    if (this.package?.url && this.package?.downloads) {
+      text = `<a href="${this.package.url}" title="${
+        this.package?.name || this.source
+      } for ${this.title}" target="_blank">${metric(
+        this.package.downloads
+      )} downloads/month</a>`;
+    } else if (this.package?.downloads) {
+      text = `${metric(this.package.downloads)} downloads/month`;
+    } else if (this.package?.url) {
+      text = `<a href="${this.package.url}" title="${
+        this.package?.name || this.source
+      } for ${this.title}" target="_blank">See ${
+        this.package?.name || this.source
+      }</a>`;
+    }
+    return this.#renderAttribute(
+      this.package?.name || this.source,
+      "download",
+      `${text || "Unknown"}`
     );
   }
 
