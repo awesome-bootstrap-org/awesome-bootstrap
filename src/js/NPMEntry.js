@@ -44,6 +44,19 @@ export class NPMEntry extends Entry {
               data.time[this.lastRelease.tag]
             );
           }
+          if (
+            this.lastRelease.tag &&
+            data.versions[this.lastRelease.tag]?.funding
+          ) {
+            this.funding = {
+              type: DOMPurify.sanitize(
+                data.versions[this.lastRelease.tag]?.funding?.type || "Unknown"
+              ),
+              url: DOMPurify.sanitize(
+                data.versions[this.lastRelease.tag]?.funding?.url
+              ),
+            };
+          }
 
           Promise.all([
             this.fetchQuality(),

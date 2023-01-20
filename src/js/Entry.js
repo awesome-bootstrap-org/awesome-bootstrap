@@ -154,6 +154,9 @@ export class Entry {
       this.renderAuthor(),
       this.renderHomepage()
     );
+    if (this.funding?.url) {
+      container.append(this.renderFunding());
+    }
     if (this.package) {
       container.append(this.renderPackage());
     }
@@ -250,6 +253,20 @@ export class Entry {
       "calendar",
       `${datediff2string(datediff(this.lastRelease?.timestamp)) || ""}`
     );
+  }
+
+  /**
+   * Render entry Funding
+   * @returns {jQuery HTML Element}
+   */
+  renderFunding() {
+    let text;
+    if (this.funding?.url && this.funding?.type) {
+      text = `<a href="${this.funding.url}" title="${this.funding?.type}" target="_blank">${this.funding?.type}</a>`;
+    } else if (this.funding?.url) {
+      text = `<a href="${this.funding.url}" title="Funding" target="_blank">Funding</a>`;
+    }
+    return this.#renderAttribute("Funding", "heart", `${text || "Unknown"}`);
   }
 
   /**
