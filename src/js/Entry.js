@@ -1,4 +1,6 @@
+import { datediff, datediff2string, metric } from "./utilities.js";
 export class Entry {
+  static _timeout = 1500;
   static #endPoint = "/api/entries";
   /**
    * Create a new Entry
@@ -122,13 +124,7 @@ export class Entry {
     return $('<div class="card h-100"></div>').append(
       $('<h3 class="card-header"></h3>').text(this.title),
       $('<div class="card-body"></div>').append(
-        $("<div></div>")
-          .addClass("d-flex align-items-center flex-wrap")
-          .append(
-            this.renderAuthor(),
-            this.renderHomepage(),
-            this.renderLicense()
-          ),
+        this.renderHeaderBadges(root),
         $(`<span>${this.description}</span>`),
         $("<div></div>")
           .addClass("d-flex align-items-center justify-content-end")
@@ -136,6 +132,45 @@ export class Entry {
       ),
       $('<div class="card-footer"></div>').append(this.renderKeywords())
     );
+  }
+
+  /**
+   * Render entry header badges
+   * @param {String} root Path to root
+   * @returns {jQuery HTML Element}
+   */
+  renderHeaderBadges(root) {
+    const container = $("<div></div>").addClass(
+      "d-flex align-items-center flex-wrap"
+    );
+    if (this.lastRelease?.tag) {
+      container.append(this.renderLastReleaseTag());
+    }
+    if (this.lastRelease?.timestamp) {
+      container.append(this.renderLastReleaseTime());
+    }
+    container.append(
+      this.renderLicense(),
+      this.renderAuthor(),
+      this.renderHomepage()
+    );
+    if (this.funding?.url) {
+      container.append(this.renderFunding());
+    }
+    if (this.package) {
+      container.append(this.renderPackage());
+    }
+    if (this.cdn) {
+      container.append(this.renderCDN());
+    }
+    if (this.quality) {
+      container.append(this.renderQuality());
+    }
+    if (this.vulnerabilities) {
+      container.append(this.renderVulnerabilities());
+    }
+
+    return container;
   }
 
   /**
@@ -181,6 +216,118 @@ export class Entry {
       "Website",
       "link-45deg",
       `<a href="${this.homepage}" target="_blank" rel="external noopener noreferrer" title="${this.name}">Website</a>`
+    );
+  }
+
+  /**
+   * Render entry quality
+   * @returns {jQuery HTML Element}
+   */
+  renderQuality() {
+    return this.#renderAttribute(
+      "Quality",
+      "check2-circle",
+      `${this.quality || "Unknown"}`
+    );
+  }
+
+  /**
+   * Render entry last release tag
+   * @returns {jQuery HTML Element}
+   */
+  renderLastReleaseTag() {
+    return this.#renderAttribute(
+      "Last release tag",
+      "tag",
+      `${this.lastRelease?.tag || "Unknown"}`
+    );
+  }
+
+  /**
+   * Render entry last release time
+   * @returns {jQuery HTML Element}
+   */
+  renderLastReleaseTime() {
+    return this.#renderAttribute(
+      "Published last release",
+      "calendar",
+      `${datediff2string(datediff(this.lastRelease?.timestamp)) || ""}`
+    );
+  }
+
+  /**
+   * Render entry Funding
+   * @returns {jQuery HTML Element}
+   */
+  renderFunding() {
+    let text;
+    if (this.funding?.url && this.funding?.type) {
+      text = `<a href="${this.funding.url}" title="${this.funding?.type}" target="_blank">${this.funding?.type}</a>`;
+    } else if (this.funding?.url) {
+      text = `<a href="${this.funding.url}" title="Funding" target="_blank">Funding</a>`;
+    }
+    return this.#renderAttribute("Funding", "heart", `${text || "Unknown"}`);
+  }
+
+  /**
+   * Render entry PAckage
+   * @returns {jQuery HTML Element}
+   */
+  renderPackage() {
+    let text;
+    if (this.package?.url && this.package?.downloads) {
+      text = `<a href="${this.package.url}" title="${
+        this.package?.name || this.source
+      } for ${this.title}" target="_blank">${metric(
+        this.package.downloads
+      )} downloads/month</a>`;
+    } else if (this.package?.downloads) {
+      text = `${metric(this.package.downloads)} downloads/month`;
+    } else if (this.package?.url) {
+      text = `<a href="${this.package.url}" title="${
+        this.package?.name || this.source
+      } for ${this.title}" target="_blank">See ${
+        this.package?.name || this.source
+      }</a>`;
+    }
+    return this.#renderAttribute(
+      this.package?.name || this.source,
+      "download",
+      `${text || "Unknown"}`
+    );
+  }
+
+  /**
+   * Render entry CDN
+   * @returns {jQuery HTML Element}
+   */
+  renderCDN() {
+    let text;
+    if (this.cdn?.url && this.cdn?.hits) {
+      text = `<a href="${this.cdn.url}" title="CDN for ${
+        this.title
+      }" target="_blank">${metric(this.cdn.hits)} hits/month</a>`;
+    } else if (this.cdn?.hits) {
+      text = `${metric(this.cdn.hits)} hits/month`;
+    } else if (this.cdn?.url) {
+      text = `<a href="${this.cdn.url}" title="CDN for ${this.title}" target="_blank">See CDN</a>`;
+    }
+    return this.#renderAttribute("CDN", "download", `${text || "Unknown"}`);
+  }
+
+  /**
+   * Render entry vulnerabilities
+   * @returns {jQuery HTML Element}
+   */
+  renderVulnerabilities() {
+    return this.#renderAttribute(
+      "Vulnerabilities",
+      "exclamation-square",
+      `<a href="${
+        this.vulnerabilities?.url || "#"
+      }" title="Vulnerabilities for ${this.title}" target="_blank">${
+        this.vulnerabilities?.count || "Unknown"
+      }</a>`
     );
   }
 

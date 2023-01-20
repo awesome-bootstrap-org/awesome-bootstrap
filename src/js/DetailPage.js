@@ -6,7 +6,7 @@ import { isBootstrapDeprecated } from "./utilities.js";
 /**
  * Main function
  */
-$().ready(function () {
+jQuery(function () {
   // Init
   const _DetailPage = new DetailPage();
 });
@@ -17,17 +17,23 @@ export class DetailPage extends Page {
   constructor() {
     super();
     const loaderSpinner = this.spinner;
-    $(DetailPage.mainSelector).append(loaderSpinner);
+    $(DetailPage.bodySelector).append(loaderSpinner);
     let params = new URL(document.location).searchParams;
-    this.entry = Entry.get(params.get("name"), this.root)
+    this.entry = Entry.get(DOMPurify.sanitize(params.get("name")), this.root)
       .then((data) => {
         this.entry = data;
+        $(DetailPage.headerSelector)
+          .addClass("border-bottom border-3")
+          .append($("<h2></h2>").text(this.entry.title));
         this.load().finally(() => {
+          $(DetailPage.headerSelector).append(
+            this.entry.renderHeaderBadges(DetailPage.root)
+          );
           loaderSpinner.remove();
         });
       })
       .catch((error) => {
-        $(DetailPage.mainSelector).append(
+        $(DetailPage.bodySelector).append(
           DetailPage.renderAlert(
             error.message,
             "danger",
@@ -51,12 +57,21 @@ export class DetailPage extends Page {
   }
 
   /**
-   * Get the main selector
+   * Get the body selector
    * @static
-   * @returns {String} main selector
+   * @returns {String} body selector
    */
-  static get mainSelector() {
-    return "main";
+  static get bodySelector() {
+    return "#content-body";
+  }
+
+  /**
+   * Get the header selector
+   * @static
+   * @returns {String} header selector
+   */
+  static get headerSelector() {
+    return "#content-header";
   }
 
   /**
@@ -73,12 +88,12 @@ export class DetailPage extends Page {
             .then(() => {
               DetailPage.appendMD(
                 this.entry.readme,
-                $(DetailPage.mainSelector)
+                $(DetailPage.bodySelector)
               );
               resolve();
             })
             .catch((error) => {
-              $(DetailPage.mainSelector).append(
+              $(DetailPage.bodySelector).append(
                 DetailPage.renderAlert(
                   error.message,
                   "danger",
@@ -93,7 +108,7 @@ export class DetailPage extends Page {
           break;
 
         default:
-          $(DetailPage.mainSelector).append(
+          $(DetailPage.bodySelector).append(
             DetailPage.renderAlert(
               `Currently we don't support detail page for ${this.entry.source} source.`,
               "info",

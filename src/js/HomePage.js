@@ -1,6 +1,14 @@
 import { Entry } from "./Entry.js";
 import { Page } from "./Page.js";
 import { isBootstrapDeprecated } from "./utilities.js";
+
+/**
+ * Main function
+ */
+jQuery(function () {
+  // Init
+  const _homepage = new HomePage();
+});
 export class HomePage extends Page {
   /**
    * Create a new HomePage
@@ -105,11 +113,3 @@ export class HomePage extends Page {
       });
   }
 }
-
-/**
- * Main function
- */
-$().ready(function () {
-  // Init
-  const _homepage = new HomePage();
-});
