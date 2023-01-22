@@ -13,7 +13,27 @@
     <nav
       class="navbar navbar-expand-md navbar-light flex-md-column p-0 mb-2"
       aria-label="Site menu">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div data-plugin="bs-darkmode-toggle" data-allowCookie></div>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:history.back()"
+              ><i class="bi bi-arrow-left-circle" aria-hidden="true"></i> Go
+              Back</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="d-none d-md-flex flex-column align-items-center">
       <div class="mt-1">
