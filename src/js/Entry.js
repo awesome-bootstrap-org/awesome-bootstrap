@@ -1,4 +1,9 @@
-import { datediff, datediff2string, metric } from "./utilities.js";
+import {
+  datediff,
+  datediff2string,
+  metric,
+  rating2stars,
+} from "./utilities.js";
 export class Entry {
   static _timeout = 1500;
   static #endPoint = "/api/entries";
@@ -224,11 +229,17 @@ export class Entry {
    * @returns {jQuery HTML Element}
    */
   renderQuality() {
-    return this.#renderAttribute(
-      "Quality",
-      "check2-circle",
-      `${this.quality || "Unknown"}`
-    );
+    let text = "Unknown";
+    if (this.quality?.url && this.quality?.rating) {
+      text = `<a href="${this.quality.url}" title="Quality for ${
+        this.title
+      }" target="_blank">${rating2stars(this.quality.rating, 1, 5)}</a>`;
+    } else if (this.quality?.rating) {
+      text = `${rating2stars(this.quality.rating, 1, 5)}`;
+    } else if (this.quality?.url) {
+      text = `<a href="${this.quality.url}" title="Quality for ${this.title}" target="_blank">See quality rating</a>`;
+    }
+    return this.#renderAttribute("Quality", "check2-circle", text);
   }
 
   /**
@@ -274,7 +285,7 @@ export class Entry {
    * @returns {jQuery HTML Element}
    */
   renderPackage() {
-    let text;
+    let text = "Unknown";
     if (this.package?.url && this.package?.downloads) {
       text = `<a href="${this.package.url}" title="${
         this.package?.name || this.source
@@ -302,7 +313,7 @@ export class Entry {
    * @returns {jQuery HTML Element}
    */
   renderCDN() {
-    let text;
+    let text = "Unknown";
     if (this.cdn?.url && this.cdn?.hits) {
       text = `<a href="${this.cdn.url}" title="CDN for ${
         this.title

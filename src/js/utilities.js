@@ -149,3 +149,46 @@ export function datediff2string(datediff) {
   }
   return result;
 }
+
+/**
+ * Get the number of stars corresponding to a rating
+ * @param {Number} rating rating to count as stars
+ * @param {Number} maxRating Maximun rating qualification
+ * @param {Numver} maxStars Maximun stars qualification
+ * @returns {Number}
+ */
+function getStartsCount(rating, maxRating = 1, maxStars = 5) {
+  return (rating / maxRating) * maxStars;
+}
+
+/**
+ * Format a rating to stars
+ * @param {Number} rating rating to count as stars
+ * @param {Number} maxRating Maximun rating qualification
+ * @param {Numver} maxStars Maximun stars qualification
+ * @returns {String HTML}
+ */
+export function rating2stars(rating, maxRating = 1, maxStars = 5) {
+  const starFill = '<i class="bi bi-star-fill" aria-hidden="true"></i>';
+  const starHalf = '<i class="bi bi-star-falf" aria-hidden="true"></i>';
+  const starEmpty = '<i class="bi bi-star" aria-hidden="true"></i>';
+
+  const starsCount = getStartsCount(rating, maxRating, maxStars);
+  const flooredStarsCount = Math.floor(starsCount);
+
+  let stars = [];
+  while (stars.length < flooredStarsCount) {
+    stars.push(starFill);
+  }
+  const decimal = starsCount - flooredStarsCount;
+  if (decimal >= 0.875) {
+    stars.push(starFill);
+  } else if (decimal >= 0.375) {
+    stars.push(starHalf);
+  }
+
+  while (stars.length < maxStars) {
+    stars.push(starEmpty);
+  }
+  return stars.join("");
+}

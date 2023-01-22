@@ -86,14 +86,17 @@ export class NPMEntry extends Entry {
    */
   fetchQuality() {
     return new Promise((resolve, reject) => {
-      /*$.ajax({
+      $.ajax({
         url: `${NPMEntry.#packageQualityEndpoint}${this.name}`,
         method: "GET",
         timeout: NPMEntry._timeout,
       })
         .done((data) => {
           const { quality } = data;
-          this.quality = DOMPurify.sanitize(quality);
+          this.quality = {
+            rating: DOMPurify.sanitize(quality),
+            url: `https://packagequality.com/#?package=${this.name}`,
+          };
           resolve();
         })
         .fail((_error) => {
@@ -103,7 +106,7 @@ export class NPMEntry extends Entry {
               { cause: { title: "Oups!" } }
             )
           );
-        });*/ resolve(); // WAITING FIX https://github.com/alexfernandez/package-quality/issues/45
+        });
     });
   }
 
