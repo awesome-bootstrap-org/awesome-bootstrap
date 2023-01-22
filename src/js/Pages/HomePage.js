@@ -1,6 +1,6 @@
-import { Entry } from "./Entry.js";
+import { Entry } from "../Models/Entry.js";
 import { Page } from "./Page.js";
-import { isBootstrapDeprecated } from "./utilities.js";
+import { isBootstrapDeprecated } from "../utilities.js";
 
 /**
  * Main function

@@ -3,7 +3,7 @@ import {
   datediff2string,
   metric,
   rating2stars,
-} from "./utilities.js";
+} from "../utilities.js";
 export class Entry {
   static _timeout = 1500;
   static #endPoint = "/api/entries";

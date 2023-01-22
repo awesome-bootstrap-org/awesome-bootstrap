@@ -1,7 +1,6 @@
-import { Entry } from "./Entry.js";
-import { NPMEntry } from "./NPMEntry.js";
+import { Entry } from "../Models/Entry.js";
+import { NPMEntry } from "../Models/NPMEntry.js";
 import { Page } from "./Page.js";
-import { isBootstrapDeprecated } from "./utilities.js";
 
 /**
  * Main function

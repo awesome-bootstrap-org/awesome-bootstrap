@@ -3,7 +3,7 @@ import {
   blinkImage,
   showdownConfig,
   md2html,
-} from "./utilities.js";
+} from "../utilities.js";
 export class Page {
   /**
    * Create a new Page and init component
