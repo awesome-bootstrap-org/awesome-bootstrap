@@ -170,7 +170,7 @@ function getStartsCount(rating, maxRating = 1, maxStars = 5) {
  */
 export function rating2stars(rating, maxRating = 1, maxStars = 5) {
   const starFill = '<i class="bi bi-star-fill" aria-hidden="true"></i>';
-  const starHalf = '<i class="bi bi-star-falf" aria-hidden="true"></i>';
+  const starHalf = '<i class="bi bi-star-half" aria-hidden="true"></i>';
   const starEmpty = '<i class="bi bi-star" aria-hidden="true"></i>';
 
   const starsCount = getStartsCount(rating, maxRating, maxStars);
