@@ -1,0 +1,12 @@
+{
+  "title": "Tags for Bootstrap",
+  "type": "component",
+  "source": "npm",
+  "name": "bootstrap5-tags",
+  "author": "LeKoala",
+  "supports": ["4", "5"],
+  "keywords": ["tags", "select", "select2", "input", "tagsinput"],
+  "license": "MIT",
+  "description": "Replace select[multiple] with nices badges for Bootstrap",
+  "homepage": "https://github.com/lekoala/bootstrap5-tags"
+}

@@ -1,0 +1,15 @@
+{
+  "title": "DataTables",
+  "type": "component",
+  "source": "npm",
+  "name": "datatables.net-bs4",
+  "author": {
+    "name": "SpryMedia Ltd",
+    "url": "http://datatables.net"
+  },
+  "supports": ["4"],
+  "keywords": ["Datatables", "jQuery", "table", "filter", "sort"],
+  "license": "MIT",
+  "description": "DataTables for jQuery with styling for Bootstrap 4",
+  "homepage": "https://datatables.net"
+}

@@ -48,7 +48,7 @@ module.exports = function (grunt) {
     },
     minjson: {
       "entries-api": {
-        src: ["src/api/entries/*.json"],
+        src: ["src/api/entries/**/*.json"],
         dest: "dist/api/entries",
       },
     },

@@ -1,0 +1,12 @@
+{
+  "title": "Vanilla JS Datepicker",
+  "type": "component",
+  "source": "npm",
+  "name": "vanillajs-datepicker",
+  "author": "Hidenao Miyamoto",
+  "supports": ["5"],
+  "keywords": ["datepicker", "vanilla", "javascript"],
+  "license": "MIT",
+  "description": "A vanilla JavaScript remake of bootstrap-datepicker for Bulma and other CSS frameworks",
+  "homepage": "https://github.com/mymth/vanillajs-datepicker#readme"
+}

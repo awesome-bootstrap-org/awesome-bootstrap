@@ -1,0 +1,12 @@
+{
+  "title": "Autocomplete for Bootstrap",
+  "type": "component",
+  "source": "npm",
+  "name": "bootstrap5-autocomplete",
+  "author": "LeKoala",
+  "supports": ["4", "5"],
+  "keywords": ["autocomplete", "input"],
+  "license": "MIT",
+  "description": "Autocomplete for Bootstrap",
+  "homepage": "https://github.com/lekoala/bootstrap5-autocomplete"
+}
