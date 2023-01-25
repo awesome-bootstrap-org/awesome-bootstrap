@@ -2,7 +2,7 @@ name: Deploy with NodeJS and Grunt
 
 on:
   push:
-    branches: ["gh-pages"]
+    branches: ["master", "gh-pages"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
