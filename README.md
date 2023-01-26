@@ -5,7 +5,6 @@
 
 :sparkles: Awesome - A curated list of amazing Bootstrap templates, plugins, UI Kits, tools and themes.
 
-[FULL LIST IN WEBSITE](https://therebelrobot.github.io/awesome-bootstrap/)
 
 ## Contents
 
