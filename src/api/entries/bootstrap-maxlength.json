@@ -1,0 +1,12 @@
+{
+  "title": "Bootstrap MaxLength",
+  "type": "component",
+  "source": "npm",
+  "name": "bootstrap-maxlength",
+  "author": "Maurizio Napoleoni",
+  "supports": ["4"],
+  "keywords": ["form", "maxlength", "html5", "input", "feedback", "jquery"],
+  "license": "MIT",
+  "description": "A visual feedback indicator for the MaxLength attribute",
+  "homepage": "https://github.com/mimo84/bootstrap-maxlength"
+}

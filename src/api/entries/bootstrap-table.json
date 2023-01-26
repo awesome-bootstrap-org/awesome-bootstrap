@@ -1,0 +1,15 @@
+{
+  "title": "Bootstrap Table",
+  "type": "component",
+  "source": "npm",
+  "name": "bootstrap-table",
+  "author": {
+    "name": "wenzhixin",
+    "url": "http://wenzhixin.net.cn/"
+  },
+  "supports": ["4", "5"],
+  "keywords": ["table", "pagination", "checkbox", "radio", "datatables"],
+  "license": "MIT",
+  "description": "An extended table to integration with some of the most widely used CSS frameworks. (Supports Bootstrap, Semantic UI, Bulma, Material Design, Foundation)",
+  "homepage": "https://bootstrap-table.com"
+}

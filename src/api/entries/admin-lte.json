@@ -1,0 +1,23 @@
+{
+  "title": "AdminLTE Bootstrap Admin Dashboard",
+  "type": "ui kit",
+  "source": "npm",
+  "name": "admin-lte",
+  "author": {
+    "name": "Colorlib",
+    "url": "https://colorlib.com"
+  },
+  "supports": ["3", "4"],
+  "keywords": [
+    "responsive",
+    "admin",
+    "template",
+    "theme",
+    "framework",
+    "control-panel",
+    "dashboard"
+  ],
+  "license": "MIT",
+  "description": "Responsive open source admin dashboard and control panel.",
+  "homepage": "https://adminlte.io"
+}

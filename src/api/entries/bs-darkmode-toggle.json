@@ -1,0 +1,15 @@
+{
+  "title": "Bootstrap Darkmode Toggle",
+  "type": "component",
+  "source": "npm",
+  "name": "bs-darkmode-toggle",
+  "author": {
+    "name": "palcarazm",
+    "url": "https://github.com/palcarazm/"
+  },
+  "supports": ["5"],
+  "keywords": ["darkmode", "darkmode toggle", "darkmode-toggle"],
+  "license": "MIT",
+  "description": "Bootstrap Darkmode Toggle is a plugin for bootstrap to add a ligthmode/darkmode switch in to your app.",
+  "homepage": "https://palcarazm.github.io/bs-darkmode-toggle/"
+}

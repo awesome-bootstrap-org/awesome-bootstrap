@@ -1,0 +1,21 @@
+{
+  "title": "Chameleon Bootstrap Admin Template",
+  "type": "ui kit",
+  "source": "npm",
+  "name": "chameleon-admin-modern-bootstrap-webapp-dashboard-html-template-ui-kit",
+  "author": {
+    "name": "ThemeSelection",
+    "url": "https://themeselection.com/"
+  },
+  "supports": ["4"],
+  "keywords": [
+    "admin",
+    "framework",
+    "admin-dashboard",
+    "webapp",
+    "themeselection"
+  ],
+  "license": "MIT",
+  "description": "Chameleon Admin is a Modern Bootstrap 4 WebApp & admin dashboard html template with a large number of components, elegant design, clean and organised code.",
+  "homepage": "https://themeselection.com/item/chameleon-admin-free-bootstrap-dashboard-template/"
+}

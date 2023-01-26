@@ -1,0 +1,12 @@
+{
+  "title": "bs-companion",
+  "type": "ui kit",
+  "source": "npm",
+  "name": "bs-companion",
+  "author": "LeKoala",
+  "supports": ["5"],
+  "keywords": ["companion", "toast", "modals", "tabs", "table", "responsive"],
+  "license": "MIT",
+  "description": "The perfect Bootstrap companion",
+  "homepage": "https://github.com/lekoala/bs-companion#:~:text=bs%2Dcompanion.vercel.app"
+}

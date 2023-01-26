@@ -1,0 +1,15 @@
+{
+  "title": "Awesome Bootstrap Checkbox",
+  "type": "component",
+  "source": "npm",
+  "name": "awesome-bootstrap-checkbox",
+  "author": {
+    "name": "Flat Logic",
+    "url": "https://flatlogic.com"
+  },
+  "supports": ["3", "4", "5"],
+  "keywords": ["checkboxes", "radios"],
+  "license": "MIT",
+  "description": "Font Awesome Bootstrap Checkboxes & Radios. Pure css way to make inputs look prettier.",
+  "homepage": "https://github.com/flatlogic/awesome-bootstrap-checkbox"
+}

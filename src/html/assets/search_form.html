@@ -1,0 +1,54 @@
+<form class="row g-1">
+  <div class="col-md">
+    <div class="input-group">
+      <label class="input-group-text" for="search" title="Search"
+        ><i class="bi bi-search" aria-hidden="true"></i
+      ></label>
+      <input
+        type="search"
+        class="form-control"
+        placeholder="Search"
+        aria-label="search"
+        aria-describedby="search"
+        id="search"
+        name="search" />
+    </div>
+  </div>
+  <div class="col-md-auto">
+    <div class="input-group">
+      <label class="input-group-text" for="type" title="Type of resource"
+        ><i class="bi bi-boxes" aria-hidden="true"></i
+      ></label>
+      <select
+        class="form-select text-uppercase"
+        aria-label="Select the type of resource"
+        id="type"
+        name="type">
+        <option value="component">Component</option>
+        <option value="ui kit">UI Kit</option>
+        <option value="template">Template</option>
+        <option value="playgrounds">Playgrounds</option>
+        <option value="design tools">Design Tools</option>
+        <option selected value="all">All</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-md-auto">
+    <div class="input-group">
+      <label
+        class="input-group-text"
+        for="support"
+        title="Bootstrap version support"
+        ><i class="bi bi-bootstrap" aria-hidden="true"></i
+      ></label>
+      <select
+        class="form-select"
+        aria-label="Select the needed Bootstrap version"
+        id="support"
+        name="support">
+        <option value="5" selected>v5</option>
+        <option value="4">v4</option>
+      </select>
+    </div>
+  </div>
+</form>

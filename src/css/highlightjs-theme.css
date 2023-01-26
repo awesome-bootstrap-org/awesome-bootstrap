@@ -1,0 +1,187 @@
+/*!
+  Theme: Boostrap colorscheme toggle
+  Description: Theme with Bootstrap colorscheme integration base on ISBL Editor style light and dark color scheme theme by Dmitriy Tarasov <dimatar@gmail.com>
+  Author: (c) Pablo Alcaraz <pablo@alcarazm.es>
+  License: MIT
+  Touched: 2023
+*/
+
+/*** FONTS ***/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Fira+Mono:wght@400;700&display=swap");
+pre code.hljs {
+  font-family: "Fira Code", "Fira Mono", monospace;
+}
+
+/*** FORMAT ***/
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  font-family: "Fira Mono", monospace;
+  font-size: 1em;
+}
+code.hljs {
+  padding: 3px 5px;
+}
+.hljs-section,
+.hljs-title,
+.hljs-attribute,
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-built_in,
+.hljs-literal,
+.hljs-class {
+  font-weight: 700;
+}
+.hljs-title > .hljs-built_in {
+  font-weight: 400;
+}
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
+
+/*** LIGHT COLOR MODE ***/
+
+[data-bs-theme="light"] .hljs {
+  background: #f0f0f0;
+}
+[data-bs-theme="light"] .hljs,
+[data-bs-theme="light"] .hljs-subst {
+  color: #444;
+}
+[data-bs-theme="light"] .hljs-comment {
+  color: #555;
+  font-style: italic;
+}
+[data-bs-theme="light"] .hljs-attribute,
+[data-bs-theme="light"] .hljs-doctag,
+[data-bs-theme="light"] .hljs-keyword,
+[data-bs-theme="light"] .hljs-meta .hljs-keyword,
+[data-bs-theme="light"] .hljs-name,
+[data-bs-theme="light"] .hljs-selector-tag {
+  color: #000;
+}
+[data-bs-theme="light"] .hljs-string {
+  color: navy;
+}
+[data-bs-theme="light"] .hljs-deletion,
+[data-bs-theme="light"] .hljs-number,
+[data-bs-theme="light"] .hljs-quote,
+[data-bs-theme="light"] .hljs-selector-class,
+[data-bs-theme="light"] .hljs-selector-id,
+[data-bs-theme="light"] .hljs-template-tag,
+[data-bs-theme="light"] .hljs-type {
+  color: #800;
+}
+[data-bs-theme="light"] .hljs-link,
+[data-bs-theme="light"] .hljs-regexp,
+[data-bs-theme="light"] .hljs-selector-attr,
+[data-bs-theme="light"] .hljs-selector-pseudo,
+[data-bs-theme="light"] .hljs-symbol,
+[data-bs-theme="light"] .hljs-template-variable,
+[data-bs-theme="light"] .hljs-variable {
+  color: #5e1700;
+}
+[data-bs-theme="light"] .hljs-built_in,
+[data-bs-theme="light"] .hljs-literal {
+  color: navy;
+}
+[data-bs-theme="light"] .hljs-addition,
+[data-bs-theme="light"] .hljs-bullet,
+[data-bs-theme="light"] .hljs-code {
+  color: #397300;
+}
+[data-bs-theme="light"] .hljs-class {
+  color: #6f1c00;
+}
+[data-bs-theme="light"] .hljs-section,
+[data-bs-theme="light"] .hljs-title {
+  color: #fb2c00;
+}
+[data-bs-theme="light"] .hljs-title > .hljs-built_in {
+  color: teal;
+}
+[data-bs-theme="light"] .hljs-meta {
+  color: #1f7199;
+}
+[data-bs-theme="light"] .hljs-meta .hljs-string {
+  color: #4d99bf;
+}
+
+/*** DARK COLOR MODE ***/
+[data-bs-theme="dark"] .hljs {
+  background: #404040;
+}
+[data-bs-theme="dark"] .hljs,
+[data-bs-theme="dark"] .hljs-subst {
+  color: #f0f0f0;
+}
+[data-bs-theme="dark"] .hljs-comment {
+  color: #b5b5b5;
+  font-style: italic;
+}
+[data-bs-theme="dark"] .hljs-attribute,
+[data-bs-theme="dark"] .hljs-doctag,
+[data-bs-theme="dark"] .hljs-keyword,
+[data-bs-theme="dark"] .hljs-meta .hljs-keyword,
+[data-bs-theme="dark"] .hljs-name,
+[data-bs-theme="dark"] .hljs-selector-tag {
+  color: #f0f0f0;
+}
+[data-bs-theme="dark"] .hljs-string {
+  color: #97bf0d;
+}
+[data-bs-theme="dark"] .hljs-deletion,
+[data-bs-theme="dark"] .hljs-number,
+[data-bs-theme="dark"] .hljs-quote,
+[data-bs-theme="dark"] .hljs-selector-class,
+[data-bs-theme="dark"] .hljs-selector-id,
+[data-bs-theme="dark"] .hljs-template-tag,
+[data-bs-theme="dark"] .hljs-type {
+  color: #f0f0f0;
+}
+[data-bs-theme="dark"] .hljs-link,
+[data-bs-theme="dark"] .hljs-regexp,
+[data-bs-theme="dark"] .hljs-selector-attr,
+[data-bs-theme="dark"] .hljs-selector-pseudo,
+[data-bs-theme="dark"] .hljs-symbol,
+[data-bs-theme="dark"] .hljs-template-variable,
+[data-bs-theme="dark"] .hljs-variable {
+  color: #e2c696;
+}
+[data-bs-theme="dark"] .hljs-built_in,
+[data-bs-theme="dark"] .hljs-literal {
+  color: #97bf0d;
+}
+[data-bs-theme="dark"] .hljs-addition,
+[data-bs-theme="dark"] .hljs-bullet,
+[data-bs-theme="dark"] .hljs-code {
+  color: #397300;
+}
+[data-bs-theme="dark"] .hljs-class {
+  color: #ce9d4d;
+}
+[data-bs-theme="dark"] .hljs-section,
+[data-bs-theme="dark"] .hljs-title {
+  color: #df471e;
+}
+[data-bs-theme="dark"] .hljs-title > .hljs-built_in {
+  color: #81bce9;
+}
+[data-bs-theme="dark"] .hljs-meta {
+  color: #1f7199;
+}
+[data-bs-theme="dark"] .hljs-meta .hljs-string {
+  color: #4d99bf;
+}

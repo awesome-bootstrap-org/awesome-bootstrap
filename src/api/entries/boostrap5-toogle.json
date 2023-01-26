@@ -1,0 +1,21 @@
+{
+  "title": "Bootstrap Toggle",
+  "type": "component",
+  "source": "npm",
+  "name": "bootstrap5-toggle",
+  "author": {
+    "name": "palcarazm",
+    "url": "https://github.com/palcarazm/"
+  },
+  "supports": ["4", "5"],
+  "keywords": [
+    "checkbox",
+    "switch",
+    "toggle",
+    "switch-button",
+    "toggle-button"
+  ],
+  "license": "MIT",
+  "description": "Bootstrap Toggle is a bootstrap 5 plugin that converts checkboxes into toggles.",
+  "homepage": "https://palcarazm.github.io/bootstrap5-toggle/"
+}

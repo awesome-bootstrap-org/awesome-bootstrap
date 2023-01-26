@@ -1,0 +1,22 @@
+{
+  "title": "bootstrap-select",
+  "type": "component",
+  "source": "npm",
+  "name": "bootstrap-select",
+  "author": {
+    "name": "Casey Holzer",
+    "url": "https://github.com/caseyjhol"
+  },
+  "supports": ["3", "4"],
+  "keywords": [
+    "javascript",
+    "jquery",
+    "form",
+    "dropdown",
+    "select",
+    "replacement"
+  ],
+  "license": "MIT",
+  "description": "The jQuery plugin that brings select elements into the 21st century with intuitive multiselection, searching, and much more. Now with Bootstrap 4 support.",
+  "homepage": "https://developer.snapappointments.com/bootstrap-select"
+}

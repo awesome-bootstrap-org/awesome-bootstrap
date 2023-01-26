@@ -1,0 +1,12 @@
+{
+  "title": "Start Bootstrap Admin 2",
+  "type": "ui kit",
+  "source": "npm",
+  "name": "startbootstrap-sb-admin-2",
+  "author": "Start Bootstrap",
+  "supports": ["4"],
+  "keywords": ["responsive", "theme", "template", "admin", "app"],
+  "license": "MIT",
+  "description": "An open source Bootstrap admin theme.",
+  "homepage": "https://startbootstrap.com/theme/sb-admin-2"
+}

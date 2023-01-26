@@ -1,0 +1,12 @@
+{
+  "title": "Sweet Alert for Bootstrap 5",
+  "type": "component",
+  "source": "npm",
+  "name": "@magicbruno/swalstrap5",
+  "author": "Bruno Migliaretti",
+  "supports": ["5"],
+  "keywords": ["sweetalert", "alert", "dialog"],
+  "license": "ISC",
+  "description": "Sweetalert2 inspired dialog based on Bootstrap 5",
+  "homepage": "https://magicbruno.github.io/SwalStrap5/"
+}

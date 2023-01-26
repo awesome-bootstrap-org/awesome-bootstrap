@@ -1,0 +1,46 @@
+{
+  "name": "awesome-bootstrap",
+  "version": "1.0.0",
+  "description": "A curated list of amazing Bootstrap tools and themes.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "grunt build",
+    "watch": "grunt dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therebelrobot/awesome-bootstrap.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "awesome",
+    "awesome-list"
+  ],
+  "author": "therebelrobot",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/therebelrobot/awesome-bootstrap/issues"
+  },
+  "homepage": "https://github.com/therebelrobot/awesome-bootstrap#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bs-darkmode-toggle": "^1.0.0-alpha2",
+    "dompurify": "^2.4.3",
+    "grunt": "^1.5.3",
+    "highlightjs": "^9.16.2",
+    "jquery": "^3.6.3",
+    "showdown.js": "^1.0.8"
+  },
+  "devDependencies": {
+    "grunt": "^1.5.3",
+    "grunt-concurrent": "^3.0.0",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-minjson": "^0.4.0",
+    "prettier": "2.8.3"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "admini",
+  "type": "ui kit",
+  "source": "npm",
+  "name": "admini",
+  "author": "LeKoala",
+  "supports": ["5"],
+  "keywords": [
+    "admin",
+    "admin template",
+    "admin panel",
+    "responsive",
+    "minimalistic"
+  ],
+  "license": "MIT",
+  "description": "Minimalistic Admin Panel built with Bootstrap",
+  "homepage": "https://admini.vercel.app/"
+}

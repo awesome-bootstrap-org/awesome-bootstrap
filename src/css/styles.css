@@ -1,0 +1,56 @@
+a {
+  text-decoration: none;
+}
+
+img:not([src]) {
+  display: none !important;
+}
+
+.ribbon {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  text-align: right;
+}
+.ribbon span {
+  font-size: 0.8rem;
+  color: var(--bs-gray-100);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  line-height: 32px;
+  transform: rotate(45deg);
+  width: 200px;
+  display: block;
+  background: var(--bs-secondary);
+  position: absolute;
+  top: 44px;
+  right: -40px;
+}
+
+.ribbon span::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid var(--bs-secondary);
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid var(--bs-secondary);
+}
+.ribbon span::after {
+  content: "";
+  position: absolute;
+  right: 0%;
+  top: 100%;
+  z-index: -1;
+  border-right: 3px solid var(--bs-secondary);
+  border-left: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid var(--bs-secondary);
+}
